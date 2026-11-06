@@ -1,8 +1,10 @@
 import Foundation
 import CoreGraphics
 import Accelerate
-import TensorFlowLite
 import VideoToolbox
+
+#if canImport(TensorFlowLite)
+import TensorFlowLite
 
 public class FaceEmbeddingEngine {
     private let interpreter: Interpreter
@@ -12,9 +14,13 @@ public class FaceEmbeddingEngine {
     private static let modelBatchSize = 2
 
     public init() throws {
-        // Safely resolve the Pod bundle
+        let resourceBundle: Bundle
+        #if SWIFT_PACKAGE
+        resourceBundle = Bundle.module
+        #else
         let bundleURL = Bundle(for: type(of: self)).url(forResource: "ReskoolerFaceSDK_Models", withExtension: "bundle")
-        let resourceBundle = bundleURL.flatMap { Bundle(url: $0) } ?? Bundle(for: type(of: self))
+        resourceBundle = bundleURL.flatMap { Bundle(url: $0) } ?? Bundle(for: type(of: self))
+        #endif
 
         guard let modelPath = resourceBundle.path(forResource: "MobileFaceNet", ofType: "tflite") else {
             throw NSError(domain: "FaceEmbeddingEngine", code: 1, userInfo: [NSLocalizedDescriptionKey: "MobileFaceNet.tflite not found"])
@@ -98,3 +104,4 @@ public class FaceEmbeddingEngine {
         }
     }
 }
+#endif

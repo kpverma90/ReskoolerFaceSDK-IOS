@@ -1,6 +1,8 @@
 import Foundation
 import CoreGraphics
 import CoreVideo
+
+#if canImport(TensorFlowLite)
 import TensorFlowLite
 
 public struct TrackState {
@@ -24,9 +26,13 @@ public class AntiSpoofEngine {
     private var tracks: [Int: TrackState] = [:]
 
     public init() throws {
-        // Safely resolve the Pod bundle
+        let resourceBundle: Bundle
+        #if SWIFT_PACKAGE
+        resourceBundle = Bundle.module
+        #else
         let bundleURL = Bundle(for: type(of: self)).url(forResource: "ReskoolerFaceSDK_Models", withExtension: "bundle")
-        let resourceBundle = bundleURL.flatMap { Bundle(url: $0) } ?? Bundle(for: type(of: self))
+        resourceBundle = bundleURL.flatMap { Bundle(url: $0) } ?? Bundle(for: type(of: self))
+        #endif
 
         guard let model27Path = resourceBundle.path(forResource: "model_2_7", ofType: "tflite"),
               let model40Path = resourceBundle.path(forResource: "model_4_0", ofType: "tflite") else {
@@ -130,3 +136,4 @@ public class AntiSpoofEngine {
         tracks.removeAll()
     }
 }
+#endif

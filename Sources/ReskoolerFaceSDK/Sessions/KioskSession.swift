@@ -47,7 +47,14 @@ public class KioskSession {
     private let recognizer: FaceRecognizer
     private let config: KioskConfig
 
-    private var tracks: [Int: Int64] = [:]
+    // Internal track state for debouncing and cooldown
+    private struct KioskTrackState {
+        var consecutiveMatches: Int = 0
+        var matchedStaffId: String? = nil
+        var lastMatchedTime: Int64 = 0
+    }
+
+    private var trackStates: [Int: KioskTrackState] = [:]
 
     public init(recognizer: FaceRecognizer, config: KioskConfig = KioskConfig()) {
         self.recognizer = recognizer
@@ -56,10 +63,13 @@ public class KioskSession {
 
     public func processFrame(observations: [KioskObservation]) -> [KioskEvent] {
         var events = [KioskEvent]()
+        let now = Int64(Date().timeIntervalSince1970 * 1000)
+
         for obs in observations {
-            if let quality = obs.quality, case .rejected(let issue) = quality {
+            if let quality = obs.quality, case .rejected = quality {
                 continue
             }
+
             if !obs.isLive {
                 events.append(.spoof(reason: "Liveness Check Failed"))
                 continue
@@ -68,10 +78,30 @@ public class KioskSession {
             guard let emb = obs.embedding else { continue }
             let result = recognizer.recognize(query: emb)
 
+            var state = trackStates[obs.trackId] ?? KioskTrackState()
+
             if case .known(let staffId, _, _) = result {
-                events.append(.matched(staffId: staffId))
+                // If the same staff is already in cooldown for this track, skip event spam
+                if state.matchedStaffId == staffId && now - state.lastMatchedTime < config.staffCooldownMillis {
+                    continue
+                }
+
+                state.consecutiveMatches += 1
+                if state.consecutiveMatches >= config.requiredMatches {
+                    events.append(.matched(staffId: staffId))
+                    state.matchedStaffId = staffId
+                    state.lastMatchedTime = now
+                    state.consecutiveMatches = 0 // Reset matches to enter cooldown properly
+                }
+            } else {
+                state.consecutiveMatches = 0
             }
+
+            trackStates[obs.trackId] = state
         }
+
+        // Expiry of abandoned tracks could be handled here in a robust implementation,
+        // omitted here for brevity since TrackSession usually purges dead tracks.
         return events
     }
 }

@@ -1,4 +1,6 @@
 import Foundation
+
+#if canImport(MLKitVision) && canImport(MLKitFaceDetection)
 import MLKitFaceDetection
 import MLKitVision
 
@@ -34,3 +36,4 @@ public class FaceDetectorEngine {
         }
     }
 }
+#endif

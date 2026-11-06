@@ -1,5 +1,7 @@
 import Foundation
 import AVFoundation
+
+#if canImport(MLKitVision) && canImport(MLKitFaceDetection)
 import MLKitVision
 import MLKitFaceDetection
 
@@ -84,8 +86,6 @@ public class FaceSDK {
             return
         }
 
-        CVPixelBufferRetain(pixelBuffer)
-
         isProcessingFrame = true
         watchdog.onFrameStarted()
 
@@ -97,7 +97,6 @@ public class FaceSDK {
 
         faceDetectorEngine.process(image: visionImage, onSuccess: { [weak self] faces in
             guard let self = self else {
-                CVPixelBufferRelease(pixelBuffer)
                 return
             }
 
@@ -106,12 +105,12 @@ public class FaceSDK {
                     _ = self.attendance?.processFrame(frame: AttendanceFrame(faceCount: 0, quality: nil, isLive: false, liveScore: 0, embedding: nil))
                 }
                 self.onResult?(FaceSdkResult(type: .noFace))
-                self.finishProcessing(success: true, pixelBuffer: pixelBuffer)
+                self.finishProcessing(success: true)
                 return
             }
             if faces.count > 1 {
                 self.onResult?(FaceSdkResult(type: .multipleFaces))
-                self.finishProcessing(success: true, pixelBuffer: pixelBuffer)
+                self.finishProcessing(success: true)
                 return
             }
 
@@ -136,7 +135,6 @@ public class FaceSDK {
 
             self.processingQueue.async { [weak self] in
                 guard let self = self else {
-                    CVPixelBufferRelease(pixelBuffer)
                     return
                 }
 
@@ -177,15 +175,14 @@ public class FaceSDK {
                         }
                     }
 
-                    self.finishProcessing(success: true, pixelBuffer: pixelBuffer)
+                    self.finishProcessing(success: true)
                 } catch {
                     self.onResult?(FaceSdkResult(type: .error, message: error.localizedDescription))
-                    self.finishProcessing(success: false, pixelBuffer: pixelBuffer)
+                    self.finishProcessing(success: false)
                 }
             }
 
         }, onFailure: { [weak self] error in
-            CVPixelBufferRelease(pixelBuffer)
             self?.onResult?(FaceSdkResult(type: .error, message: error.localizedDescription))
 
             self?.stateLock.lock()
@@ -196,8 +193,7 @@ public class FaceSDK {
         })
     }
 
-    private func finishProcessing(success: Bool, pixelBuffer: CVPixelBuffer) {
-        CVPixelBufferRelease(pixelBuffer)
+    private func finishProcessing(success: Bool) {
         watchdog.onFrameFinished(success: success)
         isProcessingFrame = false
     }
@@ -212,3 +208,4 @@ public class FaceSDK {
         antiSpoofEngine?.close()
     }
 }
+#endif
