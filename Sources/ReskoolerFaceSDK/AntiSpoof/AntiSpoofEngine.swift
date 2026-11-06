@@ -24,8 +24,12 @@ public class AntiSpoofEngine {
     private var tracks: [Int: TrackState] = [:]
 
     public init() throws {
-        guard let model27Path = Bundle.module.path(forResource: "model_2_7", ofType: "tflite"),
-              let model40Path = Bundle.module.path(forResource: "model_4_0", ofType: "tflite") else {
+        // Safely resolve the Pod bundle
+        let bundleURL = Bundle(for: type(of: self)).url(forResource: "ReskoolerFaceSDK_Models", withExtension: "bundle")
+        let resourceBundle = bundleURL.flatMap { Bundle(url: $0) } ?? Bundle(for: type(of: self))
+
+        guard let model27Path = resourceBundle.path(forResource: "model_2_7", ofType: "tflite"),
+              let model40Path = resourceBundle.path(forResource: "model_4_0", ofType: "tflite") else {
             throw NSError(domain: "AntiSpoofEngine", code: 1, userInfo: [NSLocalizedDescriptionKey: "Models not found"])
         }
 
@@ -42,12 +46,10 @@ public class AntiSpoofEngine {
     public func checkLiveness(pixelBuffer: CVPixelBuffer, trackId: Int) throws -> Float {
         var state = tracks[trackId] ?? TrackState()
 
-        // 1. Run inference on both models
         let score27 = try runModel(interpreter: interpreter27, pixelBuffer: pixelBuffer)
         let score40 = try runModel(interpreter: interpreter40, pixelBuffer: pixelBuffer)
 
-        // Combine probabilities (heuristic mimicking Android threshold integration)
-        let liveScore = (score27[1] + score40[1]) / 2.0 // C1 is typical live class index
+        let liveScore = (score27[1] + score40[1]) / 2.0
 
         state.history.append(liveScore)
         if state.history.count > 10 {
@@ -100,7 +102,6 @@ public class AntiSpoofEngine {
                 let g = Float(buffer[p+1])
                 let r = Float(buffer[p+2])
 
-                // Models expect BGR order in float representation without division for AntiSpoof in this arch.
                 data[offset] = b
                 data[offset+1] = g
                 data[offset+2] = r

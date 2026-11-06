@@ -12,8 +12,11 @@ public class FaceEmbeddingEngine {
     private static let modelBatchSize = 2
 
     public init() throws {
-        // TFLite resources loading within an Expo bundle via Pods
-        guard let modelPath = Bundle.module.path(forResource: "MobileFaceNet", ofType: "tflite") else {
+        // Safely resolve the Pod bundle
+        let bundleURL = Bundle(for: type(of: self)).url(forResource: "ReskoolerFaceSDK_Models", withExtension: "bundle")
+        let resourceBundle = bundleURL.flatMap { Bundle(url: $0) } ?? Bundle(for: type(of: self))
+
+        guard let modelPath = resourceBundle.path(forResource: "MobileFaceNet", ofType: "tflite") else {
             throw NSError(domain: "FaceEmbeddingEngine", code: 1, userInfo: [NSLocalizedDescriptionKey: "MobileFaceNet.tflite not found"])
         }
 
@@ -69,7 +72,6 @@ public class FaceEmbeddingEngine {
                     let gVal = Float(buffer[pixelIndex + 1])
                     let rVal = Float(buffer[pixelIndex + 2])
 
-                    // Android scaling (r, g, b values divided by 127.5 minus 1.0)
                     data[offset] = (rVal / 127.5) - 1.0
                     data[offset + 1] = (gVal / 127.5) - 1.0
                     data[offset + 2] = (bVal / 127.5) - 1.0
