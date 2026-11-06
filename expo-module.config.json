@@ -1,0 +1,6 @@
+{
+  "name": "reskooler-face-sdk",
+  "ios": {
+    "modules": ["ReskoolerFaceModule"]
+  }
+}

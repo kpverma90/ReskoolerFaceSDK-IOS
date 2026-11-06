@@ -1,0 +1,24 @@
+require "json"
+
+package = JSON.parse(File.read(File.join(__dir__, "package.json")))
+
+Pod::Spec.new do |s|
+  s.name         = "reskooler-face-sdk"
+  s.version      = package["version"]
+  s.summary      = package["description"]
+  s.description  = <<-DESC
+                  reskooler-face-sdk
+                   DESC
+  s.homepage     = "https://github.com/kpverma90/ReskoolerFaceSDK-IOS"
+  s.license      = "MIT"
+  s.authors      = { "Your Name" => "yourname@email.com" }
+  s.platforms    = { :ios => "13.0" }
+  s.source       = { :git => "https://github.com/kpverma90/ReskoolerFaceSDK-IOS.git", :tag => "#{s.version}" }
+
+  s.source_files = "Sources/**/*.{h,m,swift}"
+  s.resources = "Sources/ReskoolerFaceSDK/Models/*.tflite"
+
+  s.dependency "ExpoModulesCore"
+  s.dependency "GoogleMLKit/FaceDetection"
+  s.dependency "TensorFlowLiteSwift"
+end
