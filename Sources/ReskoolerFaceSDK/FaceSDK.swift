@@ -1,6 +1,8 @@
 import Foundation
 import AVFoundation
 
+#if os(iOS)
+
 #if canImport(MLKitVision) && canImport(MLKitFaceDetection)
 import MLKitVision
 import MLKitFaceDetection
@@ -208,4 +210,5 @@ public class FaceSDK {
         antiSpoofEngine?.close()
     }
 }
+#endif
 #endif

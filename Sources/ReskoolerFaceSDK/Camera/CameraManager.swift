@@ -1,6 +1,8 @@
 import Foundation
 import AVFoundation
 
+#if os(iOS)
+
 public class CameraManager: NSObject {
     private var captureSession: AVCaptureSession?
     private let videoOutput = AVCaptureVideoDataOutput()
@@ -65,3 +67,4 @@ extension CameraManager: AVCaptureVideoDataOutputSampleBufferDelegate {
         onFrame?(sampleBuffer)
     }
 }
+#endif
