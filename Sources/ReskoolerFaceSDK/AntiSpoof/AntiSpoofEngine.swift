@@ -24,8 +24,8 @@ public class AntiSpoofEngine {
     private var tracks: [Int: TrackState] = [:]
 
     public init() throws {
-        guard let model27Path = Bundle(for: type(of: self)).path(forResource: "model_2_7", ofType: "tflite"),
-              let model40Path = Bundle(for: type(of: self)).path(forResource: "model_4_0", ofType: "tflite") else {
+        guard let model27Path = Bundle.module.path(forResource: "model_2_7", ofType: "tflite"),
+              let model40Path = Bundle.module.path(forResource: "model_4_0", ofType: "tflite") else {
             throw NSError(domain: "AntiSpoofEngine", code: 1, userInfo: [NSLocalizedDescriptionKey: "Models not found"])
         }
 

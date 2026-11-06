@@ -12,14 +12,18 @@ let package = Package(
             targets: ["ReskoolerFaceSDK"]),
     ],
     dependencies: [
-        .package(url: "https://github.com/google/mlkit.git", from: "3.2.0"), // ML Kit Vision/Face Mock Link
-        .package(url: "https://github.com/tensorflow/tensorflow-lite-swift.git", from: "0.2.0"),
-        .package(url: "https://github.com/expo/expo.git", from: "51.0.0") // Expo Module core
+        // MLKit is heavily distributed via CocoaPods.
+        // For standard Swift Package Manager resolution, we cannot pull MLKit natively.
+        // To allow local structure passing, we rely on the host application to provide the Framework linkage,
+        // or provide the TensorFlowLite wrapper.
+        .package(url: "https://github.com/tensorflow/tensorflow-lite-swift.git", from: "0.2.0")
     ],
     targets: [
         .target(
             name: "ReskoolerFaceSDK",
-            dependencies: [],
+            dependencies: [
+                .product(name: "TensorFlowLite", package: "tensorflow-lite-swift")
+            ],
             resources: [
                 .process("Models")
             ]),

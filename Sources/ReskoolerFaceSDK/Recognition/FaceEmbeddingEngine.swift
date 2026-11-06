@@ -13,7 +13,7 @@ public class FaceEmbeddingEngine {
 
     public init() throws {
         // TFLite resources loading within an Expo bundle via Pods
-        guard let modelPath = Bundle(for: type(of: self)).path(forResource: "MobileFaceNet", ofType: "tflite") else {
+        guard let modelPath = Bundle.module.path(forResource: "MobileFaceNet", ofType: "tflite") else {
             throw NSError(domain: "FaceEmbeddingEngine", code: 1, userInfo: [NSLocalizedDescriptionKey: "MobileFaceNet.tflite not found"])
         }
 

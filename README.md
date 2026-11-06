@@ -2,27 +2,32 @@
 
 Native iOS Swift SDK for Reskooler Face Attendance.
 
-## Expo / EAS Build Integration
+## Integration into iOS Application
 
-This project is structured as an Expo module.
+This project is a pure Native Swift package and can be integrated using the Swift Package Manager.
 
-1. Install it into your app via a local path: `npm install file:../ReskoolerFaceSDK-IOS`
-2. Add necessary permissions in `app.json`:
-   ```json
-   "ios": {
-     "infoPlist": {
-       "NSCameraUsageDescription": "This app uses the camera for Face Attendance."
-     }
+1. Add the package to your iOS project dependencies.
+2. Because Google MLKit Face Detection does not officially support SPM, you must ensure your host application links `GoogleMLKit/FaceDetection` (e.g. via CocoaPods or XCFrameworks) so this module can compile.
+3. In your `Info.plist`, ensure you request camera permissions:
+   ```xml
+   <key>NSCameraUsageDescription</key>
+   <string>This app uses the camera for Face Attendance.</string>
+   ```
+4. Import the SDK in your Swift application:
+   ```swift
+   import ReskoolerFaceSDK
+
+   let faceSDK = FaceSDK()
+
+   faceSDK.onResult = { result in
+       print("Face Result:", result)
    }
-   ```
-3. Your main app code can invoke it via:
-   ```javascript
-   import { startFaceSDK, setGallery, addFaceResultListener } from 'reskooler-face-sdk';
 
-   addFaceResultListener((event) => {
-     console.log("Face result:", event);
-   });
-
-   startFaceSDK("kiosk");
+   faceSDK.start(mode: .kiosk)
    ```
-4. Run `eas build --platform ios` to initiate remote compilation on macOS.
+5. Stop the SDK when it is no longer required:
+   ```swift
+   faceSDK.stop()
+   ```
+
+**Note**: To bridge this to React Native or Expo, you should write a native module adapter in your host application code that interacts with the `FaceSDK` class.
