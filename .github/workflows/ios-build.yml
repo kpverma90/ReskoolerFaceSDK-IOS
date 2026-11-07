@@ -1,3 +1,4 @@
+
 name: iOS SDK Build
 
 on:
@@ -10,17 +11,68 @@ on:
 
 jobs:
   build:
-    name: Build iOS SDK on macOS
+    name: Diagnose Swift Package Build
     runs-on: macos-latest
 
     steps:
       - name: Checkout Repository
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       - name: Setup Xcode
         uses: maxim-lobanov/setup-xcode@v1
         with:
           xcode-version: latest-stable
 
-      - name: Build with Swift Package Manager
-        run: swift build -v
+      - name: Show Build Environment
+        run: |
+          echo "===== SYSTEM ====="
+          uname -a
+          uname -m
+
+          echo "===== SWIFT ====="
+          swift --version
+
+          echo "===== XCODE ====="
+          xcodebuild -version
+
+          echo "===== SDK ====="
+          xcrun --show-sdk-version
+
+          echo "===== ENVIRONMENT FLAGS ====="
+          env | sort | grep -E 'SWIFT|MACOSX|SDKROOT|DEPLOYMENT' || true
+
+      - name: Verify Package Manifest
+        run: |
+          echo "===== PACKAGE PATH ====="
+          pwd
+          find . -name Package.swift -not -path "*/.build/*"
+
+          echo "===== PACKAGE CONFIGURATION ====="
+          swift package dump-package > package-dump.json
+          cat package-dump.json
+
+      - name: Clean Build
+        run: |
+          swift package clean
+          rm -rf .build
+
+      - name: Build with Verbose Logging
+        run: |
+          set -o pipefail
+          swift build -v 2>&1 | tee swift-build.log
+
+      - name: Identify Compiler Deployment Target
+        if: always()
+        run: |
+          echo "===== ACTUAL COMPILER TARGET ====="
+          grep -E -- '-target .*apple-macosx|MACOSX_DEPLOYMENT_TARGET' swift-build.log || true
+
+      - name: Upload Diagnostic Logs
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: ios-sdk-build-diagnostics
+          path: |
+            swift-build.log
+            package-dump.json
+          if-no-files-found: ignore
