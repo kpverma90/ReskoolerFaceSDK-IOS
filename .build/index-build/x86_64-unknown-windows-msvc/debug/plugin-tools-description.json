@@ -1,0 +1,1113 @@
+{
+  "builtTestProducts" : [
+    {
+      "binaryPath" : "F:\\My Apps\\ReskoolerFaceSDK-iOS\\.build\\index-build\\x86_64-unknown-windows-msvc\\debug\\ReskoolerFaceSDKPackageTests.xctest",
+      "coverageBinaryPath" : "F:\\My Apps\\ReskoolerFaceSDK-iOS\\.build\\index-build\\x86_64-unknown-windows-msvc\\debug\\ReskoolerFaceSDKPackageTests.xctest",
+      "packagePath" : "F:\\My Apps\\ReskoolerFaceSDK-iOS",
+      "productName" : "ReskoolerFaceSDKPackageTests"
+    }
+  ],
+  "copyCommands" : {
+    "F:\\My Apps\\ReskoolerFaceSDK-iOS\\.build\\index-build\\x86_64-unknown-windows-msvc\\debug\\ReskoolerFaceSDK_ReskoolerFaceSDK.resources\\MobileFaceNet.tflite" : {
+      "inputs" : [
+        {
+          "kind" : "file",
+          "name" : "F:\\My Apps\\ReskoolerFaceSDK-iOS\\Sources\\ReskoolerFaceSDK\\Models\\MobileFaceNet.tflite"
+        }
+      ],
+      "outputs" : [
+        {
+          "kind" : "file",
+          "name" : "F:\\My Apps\\ReskoolerFaceSDK-iOS\\.build\\index-build\\x86_64-unknown-windows-msvc\\debug\\ReskoolerFaceSDK_ReskoolerFaceSDK.resources\\MobileFaceNet.tflite"
+        }
+      ]
+    },
+    "F:\\My Apps\\ReskoolerFaceSDK-iOS\\.build\\index-build\\x86_64-unknown-windows-msvc\\debug\\ReskoolerFaceSDK_ReskoolerFaceSDK.resources\\README.md" : {
+      "inputs" : [
+        {
+          "kind" : "file",
+          "name" : "F:\\My Apps\\ReskoolerFaceSDK-iOS\\Sources\\ReskoolerFaceSDK\\Models\\README.md"
+        }
+      ],
+      "outputs" : [
+        {
+          "kind" : "file",
+          "name" : "F:\\My Apps\\ReskoolerFaceSDK-iOS\\.build\\index-build\\x86_64-unknown-windows-msvc\\debug\\ReskoolerFaceSDK_ReskoolerFaceSDK.resources\\README.md"
+        }
+      ]
+    },
+    "F:\\My Apps\\ReskoolerFaceSDK-iOS\\.build\\index-build\\x86_64-unknown-windows-msvc\\debug\\ReskoolerFaceSDK_ReskoolerFaceSDK.resources\\model_2_7.tflite" : {
+      "inputs" : [
+        {
+          "kind" : "file",
+          "name" : "F:\\My Apps\\ReskoolerFaceSDK-iOS\\Sources\\ReskoolerFaceSDK\\Models\\model_2_7.tflite"
+        }
+      ],
+      "outputs" : [
+        {
+          "kind" : "file",
+          "name" : "F:\\My Apps\\ReskoolerFaceSDK-iOS\\.build\\index-build\\x86_64-unknown-windows-msvc\\debug\\ReskoolerFaceSDK_ReskoolerFaceSDK.resources\\model_2_7.tflite"
+        }
+      ]
+    },
+    "F:\\My Apps\\ReskoolerFaceSDK-iOS\\.build\\index-build\\x86_64-unknown-windows-msvc\\debug\\ReskoolerFaceSDK_ReskoolerFaceSDK.resources\\model_4_0.tflite" : {
+      "inputs" : [
+        {
+          "kind" : "file",
+          "name" : "F:\\My Apps\\ReskoolerFaceSDK-iOS\\Sources\\ReskoolerFaceSDK\\Models\\model_4_0.tflite"
+        }
+      ],
+      "outputs" : [
+        {
+          "kind" : "file",
+          "name" : "F:\\My Apps\\ReskoolerFaceSDK-iOS\\.build\\index-build\\x86_64-unknown-windows-msvc\\debug\\ReskoolerFaceSDK_ReskoolerFaceSDK.resources\\model_4_0.tflite"
+        }
+      ]
+    }
+  },
+  "explicitTargetDependencyImportCheckingMode" : {
+    "none" : {
+
+    }
+  },
+  "generatedSourceTargetSet" : [
+    "ReskoolerFaceSDKPackageDiscoveredTests"
+  ],
+  "pluginDescriptions" : [
+
+  ],
+  "swiftCommands" : {
+    "C.ReskoolerFaceSDK-x86_64-unknown-windows-msvc-debug.module" : {
+      "executable" : "C:\\Users\\ganes\\AppData\\Local\\Programs\\Swift\\Toolchains\\6.4.2+Asserts\\usr\\bin\\swiftc.exe",
+      "fileList" : "F:\\My Apps\\ReskoolerFaceSDK-iOS\\.build\\index-build\\x86_64-unknown-windows-msvc\\debug\\ReskoolerFaceSDK.build\\sources",
+      "importPath" : "F:\\My Apps\\ReskoolerFaceSDK-iOS\\.build\\index-build\\x86_64-unknown-windows-msvc\\debug\\Modules",
+      "inputs" : [
+        {
+          "kind" : "file",
+          "name" : "F:\\My Apps\\ReskoolerFaceSDK-iOS\\Sources\\ReskoolerFaceSDK\\AntiSpoof\\AntiSpoofEngine.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "F:\\My Apps\\ReskoolerFaceSDK-iOS\\Sources\\ReskoolerFaceSDK\\Camera\\CameraManager.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "F:\\My Apps\\ReskoolerFaceSDK-iOS\\Sources\\ReskoolerFaceSDK\\Detection\\FaceDetectorEngine.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "F:\\My Apps\\ReskoolerFaceSDK-iOS\\Sources\\ReskoolerFaceSDK\\Enrollment\\EnrollmentSession.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "F:\\My Apps\\ReskoolerFaceSDK-iOS\\Sources\\ReskoolerFaceSDK\\FaceSDK.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "F:\\My Apps\\ReskoolerFaceSDK-iOS\\Sources\\ReskoolerFaceSDK\\FaceSdkModels.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "F:\\My Apps\\ReskoolerFaceSDK-iOS\\Sources\\ReskoolerFaceSDK\\Quality\\FaceQuality.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "F:\\My Apps\\ReskoolerFaceSDK-iOS\\Sources\\ReskoolerFaceSDK\\Recognition\\EmbeddingGallery.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "F:\\My Apps\\ReskoolerFaceSDK-iOS\\Sources\\ReskoolerFaceSDK\\Recognition\\FaceEmbeddingEngine.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "F:\\My Apps\\ReskoolerFaceSDK-iOS\\Sources\\ReskoolerFaceSDK\\Recognition\\FaceRecognizer.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "F:\\My Apps\\ReskoolerFaceSDK-iOS\\Sources\\ReskoolerFaceSDK\\Recognition\\FaceSimilarity.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "F:\\My Apps\\ReskoolerFaceSDK-iOS\\Sources\\ReskoolerFaceSDK\\Result\\FaceResult.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "F:\\My Apps\\ReskoolerFaceSDK-iOS\\Sources\\ReskoolerFaceSDK\\Sessions\\KioskSession.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "F:\\My Apps\\ReskoolerFaceSDK-iOS\\Sources\\ReskoolerFaceSDK\\Sessions\\KioskWatchdog.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "F:\\My Apps\\ReskoolerFaceSDK-iOS\\Sources\\ReskoolerFaceSDK\\Sessions\\SelfAttendanceSession.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "F:\\My Apps\\ReskoolerFaceSDK-iOS\\Sources\\ReskoolerFaceSDK\\Tracking\\TrackSession.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "F:\\My Apps\\ReskoolerFaceSDK-iOS\\Sources\\ReskoolerFaceSDK\\Utilities\\ImageProcessor.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "F:\\My Apps\\ReskoolerFaceSDK-iOS\\Sources\\ReskoolerFaceSDK\\Utilities\\VideoToolboxHeader.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "F:\\My Apps\\ReskoolerFaceSDK-iOS\\.build\\index-build\\x86_64-unknown-windows-msvc\\debug\\ReskoolerFaceSDK.build\\DerivedSources\\resource_bundle_accessor.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "F:\\My Apps\\ReskoolerFaceSDK-iOS\\.build\\index-build\\x86_64-unknown-windows-msvc\\debug\\swift-version-37C0B321409C1375.txt"
+        },
+        {
+          "kind" : "virtual",
+          "name" : "<ReskoolerFaceSDK-x86_64-unknown-windows-msvc-debug.module-resources>"
+        },
+        {
+          "kind" : "file",
+          "name" : "F:\\My Apps\\ReskoolerFaceSDK-iOS\\.build\\index-build\\x86_64-unknown-windows-msvc\\debug\\ReskoolerFaceSDK.build\\sources"
+        }
+      ],
+      "isLibrary" : true,
+      "moduleName" : "ReskoolerFaceSDK",
+      "moduleOutputPath" : "F:\\My Apps\\ReskoolerFaceSDK-iOS\\.build\\index-build\\x86_64-unknown-windows-msvc\\debug\\Modules\\ReskoolerFaceSDK.swiftmodule",
+      "objects" : [
+        "F:\\My Apps\\ReskoolerFaceSDK-iOS\\.build\\index-build\\x86_64-unknown-windows-msvc\\debug\\ReskoolerFaceSDK.build\\AntiSpoofEngine.swift.o",
+        "F:\\My Apps\\ReskoolerFaceSDK-iOS\\.build\\index-build\\x86_64-unknown-windows-msvc\\debug\\ReskoolerFaceSDK.build\\CameraManager.swift.o",
+        "F:\\My Apps\\ReskoolerFaceSDK-iOS\\.build\\index-build\\x86_64-unknown-windows-msvc\\debug\\ReskoolerFaceSDK.build\\FaceDetectorEngine.swift.o",
+        "F:\\My Apps\\ReskoolerFaceSDK-iOS\\.build\\index-build\\x86_64-unknown-windows-msvc\\debug\\ReskoolerFaceSDK.build\\EnrollmentSession.swift.o",
+        "F:\\My Apps\\ReskoolerFaceSDK-iOS\\.build\\index-build\\x86_64-unknown-windows-msvc\\debug\\ReskoolerFaceSDK.build\\FaceSDK.swift.o",
+        "F:\\My Apps\\ReskoolerFaceSDK-iOS\\.build\\index-build\\x86_64-unknown-windows-msvc\\debug\\ReskoolerFaceSDK.build\\FaceSdkModels.swift.o",
+        "F:\\My Apps\\ReskoolerFaceSDK-iOS\\.build\\index-build\\x86_64-unknown-windows-msvc\\debug\\ReskoolerFaceSDK.build\\FaceQuality.swift.o",
+        "F:\\My Apps\\ReskoolerFaceSDK-iOS\\.build\\index-build\\x86_64-unknown-windows-msvc\\debug\\ReskoolerFaceSDK.build\\EmbeddingGallery.swift.o",
+        "F:\\My Apps\\ReskoolerFaceSDK-iOS\\.build\\index-build\\x86_64-unknown-windows-msvc\\debug\\ReskoolerFaceSDK.build\\FaceEmbeddingEngine.swift.o",
+        "F:\\My Apps\\ReskoolerFaceSDK-iOS\\.build\\index-build\\x86_64-unknown-windows-msvc\\debug\\ReskoolerFaceSDK.build\\FaceRecognizer.swift.o",
+        "F:\\My Apps\\ReskoolerFaceSDK-iOS\\.build\\index-build\\x86_64-unknown-windows-msvc\\debug\\ReskoolerFaceSDK.build\\FaceSimilarity.swift.o",
+        "F:\\My Apps\\ReskoolerFaceSDK-iOS\\.build\\index-build\\x86_64-unknown-windows-msvc\\debug\\ReskoolerFaceSDK.build\\FaceResult.swift.o",
+        "F:\\My Apps\\ReskoolerFaceSDK-iOS\\.build\\index-build\\x86_64-unknown-windows-msvc\\debug\\ReskoolerFaceSDK.build\\KioskSession.swift.o",
+        "F:\\My Apps\\ReskoolerFaceSDK-iOS\\.build\\index-build\\x86_64-unknown-windows-msvc\\debug\\ReskoolerFaceSDK.build\\KioskWatchdog.swift.o",
+        "F:\\My Apps\\ReskoolerFaceSDK-iOS\\.build\\index-build\\x86_64-unknown-windows-msvc\\debug\\ReskoolerFaceSDK.build\\SelfAttendanceSession.swift.o",
+        "F:\\My Apps\\ReskoolerFaceSDK-iOS\\.build\\index-build\\x86_64-unknown-windows-msvc\\debug\\ReskoolerFaceSDK.build\\TrackSession.swift.o",
+        "F:\\My Apps\\ReskoolerFaceSDK-iOS\\.build\\index-build\\x86_64-unknown-windows-msvc\\debug\\ReskoolerFaceSDK.build\\ImageProcessor.swift.o",
+        "F:\\My Apps\\ReskoolerFaceSDK-iOS\\.build\\index-build\\x86_64-unknown-windows-msvc\\debug\\ReskoolerFaceSDK.build\\VideoToolboxHeader.swift.o",
+        "F:\\My Apps\\ReskoolerFaceSDK-iOS\\.build\\index-build\\x86_64-unknown-windows-msvc\\debug\\ReskoolerFaceSDK.build\\resource_bundle_accessor.swift.o"
+      ],
+      "otherArguments" : [
+        "-target",
+        "x86_64-unknown-windows-msvc",
+        "-incremental",
+        "-enable-batch-mode",
+        "-serialize-diagnostics",
+        "-Onone",
+        "-enable-testing",
+        "-j12",
+        "-DSWIFT_PACKAGE",
+        "-DDEBUG",
+        "-DSWIFT_MODULE_RESOURCE_BUNDLE_AVAILABLE",
+        "-module-cache-path",
+        "F:\\My Apps\\ReskoolerFaceSDK-iOS\\.build\\index-build\\x86_64-unknown-windows-msvc\\debug\\ModuleCache",
+        "-parseable-output",
+        "-parse-as-library",
+        "-static",
+        "-emit-objc-header",
+        "-emit-objc-header-path",
+        "F:\\My Apps\\ReskoolerFaceSDK-iOS\\.build\\index-build\\x86_64-unknown-windows-msvc\\debug\\ReskoolerFaceSDK.build\\include\\ReskoolerFaceSDK-Swift.h",
+        "-swift-version",
+        "5",
+        "-Xfrontend",
+        "-experimental-lazy-typecheck",
+        "-Xfrontend",
+        "-experimental-skip-all-function-bodies",
+        "-Xfrontend",
+        "-experimental-allow-module-with-compiler-errors",
+        "-Xfrontend",
+        "-empty-abi-descriptor",
+        "-sdk",
+        "C:\\Users\\ganes\\AppData\\Local\\Programs\\Swift\\Platforms\\6.4.2\\Windows.platform\\Developer\\SDKs\\Windows.sdk",
+        "-libc",
+        "MD",
+        "-I",
+        "C:\\Users\\ganes\\AppData\\Local\\Programs\\Swift\\Platforms\\6.4.2\\Windows.platform\\Developer\\Library\\XCTest-6.4.2\\usr\\lib\\swift\\windows",
+        "-I",
+        "C:\\Users\\ganes\\AppData\\Local\\Programs\\Swift\\Platforms\\6.4.2\\Windows.platform\\Developer\\Library\\XCTest-6.4.2\\usr\\lib\\swift\\windows\\x86_64",
+        "-L",
+        "C:\\Users\\ganes\\AppData\\Local\\Programs\\Swift\\Platforms\\6.4.2\\Windows.platform\\Developer\\Library\\XCTest-6.4.2\\usr\\lib\\swift\\windows\\x86_64",
+        "-I",
+        "C:\\Users\\ganes\\AppData\\Local\\Programs\\Swift\\Platforms\\6.4.2\\Windows.platform\\Developer\\Library\\Testing-6.4.2\\usr\\lib\\swift\\windows",
+        "-L",
+        "C:\\Users\\ganes\\AppData\\Local\\Programs\\Swift\\Platforms\\6.4.2\\Windows.platform\\Developer\\Library\\Testing-6.4.2\\usr\\lib\\swift\\windows\\x86_64",
+        "-use-ld=lld",
+        "-g",
+        "-use-ld=lld",
+        "-Xcc",
+        "-D_MT",
+        "-Xcc",
+        "-D_DLL",
+        "-Xcc",
+        "-Xclang",
+        "-Xcc",
+        "--dependent-lib=msvcrt",
+        "-Xcc",
+        "-gdwarf",
+        "-package-name",
+        "reskoolerfacesdk_ios"
+      ],
+      "outputFileMapPath" : "F:\\My Apps\\ReskoolerFaceSDK-iOS\\.build\\index-build\\x86_64-unknown-windows-msvc\\debug\\ReskoolerFaceSDK.build\\output-file-map.json",
+      "outputs" : [
+        {
+          "kind" : "file",
+          "name" : "F:\\My Apps\\ReskoolerFaceSDK-iOS\\.build\\index-build\\x86_64-unknown-windows-msvc\\debug\\Modules\\ReskoolerFaceSDK.swiftmodule"
+        }
+      ],
+      "prepareForIndexing" : true,
+      "sources" : [
+        "F:\\My Apps\\ReskoolerFaceSDK-iOS\\Sources\\ReskoolerFaceSDK\\AntiSpoof\\AntiSpoofEngine.swift",
+        "F:\\My Apps\\ReskoolerFaceSDK-iOS\\Sources\\ReskoolerFaceSDK\\Camera\\CameraManager.swift",
+        "F:\\My Apps\\ReskoolerFaceSDK-iOS\\Sources\\ReskoolerFaceSDK\\Detection\\FaceDetectorEngine.swift",
+        "F:\\My Apps\\ReskoolerFaceSDK-iOS\\Sources\\ReskoolerFaceSDK\\Enrollment\\EnrollmentSession.swift",
+        "F:\\My Apps\\ReskoolerFaceSDK-iOS\\Sources\\ReskoolerFaceSDK\\FaceSDK.swift",
+        "F:\\My Apps\\ReskoolerFaceSDK-iOS\\Sources\\ReskoolerFaceSDK\\FaceSdkModels.swift",
+        "F:\\My Apps\\ReskoolerFaceSDK-iOS\\Sources\\ReskoolerFaceSDK\\Quality\\FaceQuality.swift",
+        "F:\\My Apps\\ReskoolerFaceSDK-iOS\\Sources\\ReskoolerFaceSDK\\Recognition\\EmbeddingGallery.swift",
+        "F:\\My Apps\\ReskoolerFaceSDK-iOS\\Sources\\ReskoolerFaceSDK\\Recognition\\FaceEmbeddingEngine.swift",
+        "F:\\My Apps\\ReskoolerFaceSDK-iOS\\Sources\\ReskoolerFaceSDK\\Recognition\\FaceRecognizer.swift",
+        "F:\\My Apps\\ReskoolerFaceSDK-iOS\\Sources\\ReskoolerFaceSDK\\Recognition\\FaceSimilarity.swift",
+        "F:\\My Apps\\ReskoolerFaceSDK-iOS\\Sources\\ReskoolerFaceSDK\\Result\\FaceResult.swift",
+        "F:\\My Apps\\ReskoolerFaceSDK-iOS\\Sources\\ReskoolerFaceSDK\\Sessions\\KioskSession.swift",
+        "F:\\My Apps\\ReskoolerFaceSDK-iOS\\Sources\\ReskoolerFaceSDK\\Sessions\\KioskWatchdog.swift",
+        "F:\\My Apps\\ReskoolerFaceSDK-iOS\\Sources\\ReskoolerFaceSDK\\Sessions\\SelfAttendanceSession.swift",
+        "F:\\My Apps\\ReskoolerFaceSDK-iOS\\Sources\\ReskoolerFaceSDK\\Tracking\\TrackSession.swift",
+        "F:\\My Apps\\ReskoolerFaceSDK-iOS\\Sources\\ReskoolerFaceSDK\\Utilities\\ImageProcessor.swift",
+        "F:\\My Apps\\ReskoolerFaceSDK-iOS\\Sources\\ReskoolerFaceSDK\\Utilities\\VideoToolboxHeader.swift",
+        "F:\\My Apps\\ReskoolerFaceSDK-iOS\\.build\\index-build\\x86_64-unknown-windows-msvc\\debug\\ReskoolerFaceSDK.build\\DerivedSources\\resource_bundle_accessor.swift"
+      ],
+      "tempsPath" : "F:\\My Apps\\ReskoolerFaceSDK-iOS\\.build\\index-build\\x86_64-unknown-windows-msvc\\debug\\ReskoolerFaceSDK.build",
+      "wholeModuleOptimization" : false
+    },
+    "C.ReskoolerFaceSDKPackageDiscoveredTests-x86_64-unknown-windows-msvc-debug.module" : {
+      "executable" : "C:\\Users\\ganes\\AppData\\Local\\Programs\\Swift\\Toolchains\\6.4.2+Asserts\\usr\\bin\\swiftc.exe",
+      "fileList" : "F:\\My Apps\\ReskoolerFaceSDK-iOS\\.build\\index-build\\x86_64-unknown-windows-msvc\\debug\\ReskoolerFaceSDKPackageDiscoveredTests.build\\sources",
+      "importPath" : "F:\\My Apps\\ReskoolerFaceSDK-iOS\\.build\\index-build\\x86_64-unknown-windows-msvc\\debug\\Modules",
+      "inputs" : [
+        {
+          "kind" : "file",
+          "name" : "F:\\My Apps\\ReskoolerFaceSDK-iOS\\.build\\index-build\\x86_64-unknown-windows-msvc\\debug\\ReskoolerFaceSDKPackageDiscoveredTests.derived\\ReskoolerFaceSDKTests.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "F:\\My Apps\\ReskoolerFaceSDK-iOS\\.build\\index-build\\x86_64-unknown-windows-msvc\\debug\\ReskoolerFaceSDKPackageDiscoveredTests.derived\\all-discovered-tests.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "F:\\My Apps\\ReskoolerFaceSDK-iOS\\.build\\index-build\\x86_64-unknown-windows-msvc\\debug\\swift-version-37C0B321409C1375.txt"
+        },
+        {
+          "kind" : "file",
+          "name" : "F:\\My Apps\\ReskoolerFaceSDK-iOS\\.build\\index-build\\x86_64-unknown-windows-msvc\\debug\\Modules\\ReskoolerFaceSDKTests.swiftmodule"
+        },
+        {
+          "kind" : "file",
+          "name" : "F:\\My Apps\\ReskoolerFaceSDK-iOS\\.build\\index-build\\x86_64-unknown-windows-msvc\\debug\\ReskoolerFaceSDKPackageDiscoveredTests.build\\sources"
+        }
+      ],
+      "isLibrary" : true,
+      "moduleName" : "ReskoolerFaceSDKPackageDiscoveredTests",
+      "moduleOutputPath" : "F:\\My Apps\\ReskoolerFaceSDK-iOS\\.build\\index-build\\x86_64-unknown-windows-msvc\\debug\\Modules\\ReskoolerFaceSDKPackageDiscoveredTests.swiftmodule",
+      "objects" : [
+        "F:\\My Apps\\ReskoolerFaceSDK-iOS\\.build\\index-build\\x86_64-unknown-windows-msvc\\debug\\ReskoolerFaceSDKPackageDiscoveredTests.build\\ReskoolerFaceSDKTests.swift.o",
+        "F:\\My Apps\\ReskoolerFaceSDK-iOS\\.build\\index-build\\x86_64-unknown-windows-msvc\\debug\\ReskoolerFaceSDKPackageDiscoveredTests.build\\all-discovered-tests.swift.o"
+      ],
+      "otherArguments" : [
+        "-target",
+        "x86_64-unknown-windows-msvc",
+        "-incremental",
+        "-enable-batch-mode",
+        "-serialize-diagnostics",
+        "-Onone",
+        "-enable-testing",
+        "-Xfrontend",
+        "-enable-cross-import-overlays",
+        "-j12",
+        "-DSWIFT_PACKAGE",
+        "-DDEBUG",
+        "-DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE",
+        "-module-cache-path",
+        "F:\\My Apps\\ReskoolerFaceSDK-iOS\\.build\\index-build\\x86_64-unknown-windows-msvc\\debug\\ModuleCache",
+        "-parseable-output",
+        "-parse-as-library",
+        "-static",
+        "-emit-objc-header",
+        "-emit-objc-header-path",
+        "F:\\My Apps\\ReskoolerFaceSDK-iOS\\.build\\index-build\\x86_64-unknown-windows-msvc\\debug\\ReskoolerFaceSDKPackageDiscoveredTests.build\\include\\ReskoolerFaceSDKPackageDiscoveredTests-Swift.h",
+        "-Xfrontend",
+        "-experimental-lazy-typecheck",
+        "-Xfrontend",
+        "-experimental-skip-all-function-bodies",
+        "-Xfrontend",
+        "-experimental-allow-module-with-compiler-errors",
+        "-Xfrontend",
+        "-empty-abi-descriptor",
+        "-sdk",
+        "C:\\Users\\ganes\\AppData\\Local\\Programs\\Swift\\Platforms\\6.4.2\\Windows.platform\\Developer\\SDKs\\Windows.sdk",
+        "-libc",
+        "MD",
+        "-I",
+        "C:\\Users\\ganes\\AppData\\Local\\Programs\\Swift\\Platforms\\6.4.2\\Windows.platform\\Developer\\Library\\XCTest-6.4.2\\usr\\lib\\swift\\windows",
+        "-I",
+        "C:\\Users\\ganes\\AppData\\Local\\Programs\\Swift\\Platforms\\6.4.2\\Windows.platform\\Developer\\Library\\XCTest-6.4.2\\usr\\lib\\swift\\windows\\x86_64",
+        "-L",
+        "C:\\Users\\ganes\\AppData\\Local\\Programs\\Swift\\Platforms\\6.4.2\\Windows.platform\\Developer\\Library\\XCTest-6.4.2\\usr\\lib\\swift\\windows\\x86_64",
+        "-I",
+        "C:\\Users\\ganes\\AppData\\Local\\Programs\\Swift\\Platforms\\6.4.2\\Windows.platform\\Developer\\Library\\Testing-6.4.2\\usr\\lib\\swift\\windows",
+        "-L",
+        "C:\\Users\\ganes\\AppData\\Local\\Programs\\Swift\\Platforms\\6.4.2\\Windows.platform\\Developer\\Library\\Testing-6.4.2\\usr\\lib\\swift\\windows\\x86_64",
+        "-use-ld=lld",
+        "-g",
+        "-use-ld=lld",
+        "-Xcc",
+        "-D_MT",
+        "-Xcc",
+        "-D_DLL",
+        "-Xcc",
+        "-Xclang",
+        "-Xcc",
+        "--dependent-lib=msvcrt",
+        "-Xcc",
+        "-gdwarf",
+        "-package-name",
+        "reskoolerfacesdk_ios"
+      ],
+      "outputFileMapPath" : "F:\\My Apps\\ReskoolerFaceSDK-iOS\\.build\\index-build\\x86_64-unknown-windows-msvc\\debug\\ReskoolerFaceSDKPackageDiscoveredTests.build\\output-file-map.json",
+      "outputs" : [
+        {
+          "kind" : "file",
+          "name" : "F:\\My Apps\\ReskoolerFaceSDK-iOS\\.build\\index-build\\x86_64-unknown-windows-msvc\\debug\\Modules\\ReskoolerFaceSDKPackageDiscoveredTests.swiftmodule"
+        }
+      ],
+      "prepareForIndexing" : true,
+      "sources" : [
+        "F:\\My Apps\\ReskoolerFaceSDK-iOS\\.build\\index-build\\x86_64-unknown-windows-msvc\\debug\\ReskoolerFaceSDKPackageDiscoveredTests.derived\\ReskoolerFaceSDKTests.swift",
+        "F:\\My Apps\\ReskoolerFaceSDK-iOS\\.build\\index-build\\x86_64-unknown-windows-msvc\\debug\\ReskoolerFaceSDKPackageDiscoveredTests.derived\\all-discovered-tests.swift"
+      ],
+      "tempsPath" : "F:\\My Apps\\ReskoolerFaceSDK-iOS\\.build\\index-build\\x86_64-unknown-windows-msvc\\debug\\ReskoolerFaceSDKPackageDiscoveredTests.build",
+      "wholeModuleOptimization" : false
+    },
+    "C.ReskoolerFaceSDKPackageTests-x86_64-unknown-windows-msvc-debug.module" : {
+      "executable" : "C:\\Users\\ganes\\AppData\\Local\\Programs\\Swift\\Toolchains\\6.4.2+Asserts\\usr\\bin\\swiftc.exe",
+      "fileList" : "F:\\My Apps\\ReskoolerFaceSDK-iOS\\.build\\index-build\\x86_64-unknown-windows-msvc\\debug\\ReskoolerFaceSDKPackageTests.build\\sources",
+      "importPath" : "F:\\My Apps\\ReskoolerFaceSDK-iOS\\.build\\index-build\\x86_64-unknown-windows-msvc\\debug\\Modules",
+      "inputs" : [
+        {
+          "kind" : "file",
+          "name" : "F:\\My Apps\\ReskoolerFaceSDK-iOS\\.build\\index-build\\x86_64-unknown-windows-msvc\\debug\\ReskoolerFaceSDKPackageTests.derived\\runner.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "F:\\My Apps\\ReskoolerFaceSDK-iOS\\.build\\index-build\\x86_64-unknown-windows-msvc\\debug\\swift-version-37C0B321409C1375.txt"
+        },
+        {
+          "kind" : "file",
+          "name" : "F:\\My Apps\\ReskoolerFaceSDK-iOS\\.build\\index-build\\x86_64-unknown-windows-msvc\\debug\\Modules\\ReskoolerFaceSDKTests.swiftmodule"
+        },
+        {
+          "kind" : "file",
+          "name" : "F:\\My Apps\\ReskoolerFaceSDK-iOS\\.build\\index-build\\x86_64-unknown-windows-msvc\\debug\\Modules\\ReskoolerFaceSDKPackageDiscoveredTests.swiftmodule"
+        },
+        {
+          "kind" : "file",
+          "name" : "F:\\My Apps\\ReskoolerFaceSDK-iOS\\.build\\index-build\\x86_64-unknown-windows-msvc\\debug\\ReskoolerFaceSDKPackageTests.build\\sources"
+        }
+      ],
+      "isLibrary" : true,
+      "moduleName" : "ReskoolerFaceSDKPackageTests",
+      "moduleOutputPath" : "F:\\My Apps\\ReskoolerFaceSDK-iOS\\.build\\index-build\\x86_64-unknown-windows-msvc\\debug\\Modules\\ReskoolerFaceSDKPackageTests.swiftmodule",
+      "objects" : [
+        "F:\\My Apps\\ReskoolerFaceSDK-iOS\\.build\\index-build\\x86_64-unknown-windows-msvc\\debug\\ReskoolerFaceSDKPackageTests.build\\runner.swift.o"
+      ],
+      "otherArguments" : [
+        "-target",
+        "x86_64-unknown-windows-msvc",
+        "-incremental",
+        "-enable-batch-mode",
+        "-serialize-diagnostics",
+        "-Onone",
+        "-enable-testing",
+        "-Xfrontend",
+        "-enable-cross-import-overlays",
+        "-j12",
+        "-DSWIFT_PACKAGE",
+        "-DDEBUG",
+        "-DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE",
+        "-module-cache-path",
+        "F:\\My Apps\\ReskoolerFaceSDK-iOS\\.build\\index-build\\x86_64-unknown-windows-msvc\\debug\\ModuleCache",
+        "-parseable-output",
+        "-parse-as-library",
+        "-static",
+        "-emit-objc-header",
+        "-emit-objc-header-path",
+        "F:\\My Apps\\ReskoolerFaceSDK-iOS\\.build\\index-build\\x86_64-unknown-windows-msvc\\debug\\ReskoolerFaceSDKPackageTests.build\\include\\ReskoolerFaceSDKPackageTests-Swift.h",
+        "-Xfrontend",
+        "-experimental-lazy-typecheck",
+        "-Xfrontend",
+        "-experimental-skip-all-function-bodies",
+        "-Xfrontend",
+        "-experimental-allow-module-with-compiler-errors",
+        "-Xfrontend",
+        "-empty-abi-descriptor",
+        "-sdk",
+        "C:\\Users\\ganes\\AppData\\Local\\Programs\\Swift\\Platforms\\6.4.2\\Windows.platform\\Developer\\SDKs\\Windows.sdk",
+        "-libc",
+        "MD",
+        "-I",
+        "C:\\Users\\ganes\\AppData\\Local\\Programs\\Swift\\Platforms\\6.4.2\\Windows.platform\\Developer\\Library\\XCTest-6.4.2\\usr\\lib\\swift\\windows",
+        "-I",
+        "C:\\Users\\ganes\\AppData\\Local\\Programs\\Swift\\Platforms\\6.4.2\\Windows.platform\\Developer\\Library\\XCTest-6.4.2\\usr\\lib\\swift\\windows\\x86_64",
+        "-L",
+        "C:\\Users\\ganes\\AppData\\Local\\Programs\\Swift\\Platforms\\6.4.2\\Windows.platform\\Developer\\Library\\XCTest-6.4.2\\usr\\lib\\swift\\windows\\x86_64",
+        "-I",
+        "C:\\Users\\ganes\\AppData\\Local\\Programs\\Swift\\Platforms\\6.4.2\\Windows.platform\\Developer\\Library\\Testing-6.4.2\\usr\\lib\\swift\\windows",
+        "-L",
+        "C:\\Users\\ganes\\AppData\\Local\\Programs\\Swift\\Platforms\\6.4.2\\Windows.platform\\Developer\\Library\\Testing-6.4.2\\usr\\lib\\swift\\windows\\x86_64",
+        "-use-ld=lld",
+        "-g",
+        "-use-ld=lld",
+        "-Xcc",
+        "-D_MT",
+        "-Xcc",
+        "-D_DLL",
+        "-Xcc",
+        "-Xclang",
+        "-Xcc",
+        "--dependent-lib=msvcrt",
+        "-Xcc",
+        "-gdwarf",
+        "-package-name",
+        "reskoolerfacesdk_ios"
+      ],
+      "outputFileMapPath" : "F:\\My Apps\\ReskoolerFaceSDK-iOS\\.build\\index-build\\x86_64-unknown-windows-msvc\\debug\\ReskoolerFaceSDKPackageTests.build\\output-file-map.json",
+      "outputs" : [
+        {
+          "kind" : "file",
+          "name" : "F:\\My Apps\\ReskoolerFaceSDK-iOS\\.build\\index-build\\x86_64-unknown-windows-msvc\\debug\\Modules\\ReskoolerFaceSDKPackageTests.swiftmodule"
+        }
+      ],
+      "prepareForIndexing" : true,
+      "sources" : [
+        "F:\\My Apps\\ReskoolerFaceSDK-iOS\\.build\\index-build\\x86_64-unknown-windows-msvc\\debug\\ReskoolerFaceSDKPackageTests.derived\\runner.swift"
+      ],
+      "tempsPath" : "F:\\My Apps\\ReskoolerFaceSDK-iOS\\.build\\index-build\\x86_64-unknown-windows-msvc\\debug\\ReskoolerFaceSDKPackageTests.build",
+      "wholeModuleOptimization" : false
+    },
+    "C.ReskoolerFaceSDKTests-x86_64-unknown-windows-msvc-debug.module" : {
+      "executable" : "C:\\Users\\ganes\\AppData\\Local\\Programs\\Swift\\Toolchains\\6.4.2+Asserts\\usr\\bin\\swiftc.exe",
+      "fileList" : "F:\\My Apps\\ReskoolerFaceSDK-iOS\\.build\\index-build\\x86_64-unknown-windows-msvc\\debug\\ReskoolerFaceSDKTests.build\\sources",
+      "importPath" : "F:\\My Apps\\ReskoolerFaceSDK-iOS\\.build\\index-build\\x86_64-unknown-windows-msvc\\debug\\Modules",
+      "inputs" : [
+        {
+          "kind" : "file",
+          "name" : "F:\\My Apps\\ReskoolerFaceSDK-iOS\\Tests\\ReskoolerFaceSDKTests\\FaceQualityGateTests.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "F:\\My Apps\\ReskoolerFaceSDK-iOS\\Tests\\ReskoolerFaceSDKTests\\FaceRecognizerTests.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "F:\\My Apps\\ReskoolerFaceSDK-iOS\\Tests\\ReskoolerFaceSDKTests\\FaceSimilarityTests.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "F:\\My Apps\\ReskoolerFaceSDK-iOS\\.build\\index-build\\x86_64-unknown-windows-msvc\\debug\\swift-version-37C0B321409C1375.txt"
+        },
+        {
+          "kind" : "file",
+          "name" : "F:\\My Apps\\ReskoolerFaceSDK-iOS\\.build\\index-build\\x86_64-unknown-windows-msvc\\debug\\Modules\\ReskoolerFaceSDK.swiftmodule"
+        },
+        {
+          "kind" : "file",
+          "name" : "F:\\My Apps\\ReskoolerFaceSDK-iOS\\.build\\index-build\\x86_64-unknown-windows-msvc\\debug\\ReskoolerFaceSDKTests.build\\sources"
+        }
+      ],
+      "isLibrary" : true,
+      "moduleName" : "ReskoolerFaceSDKTests",
+      "moduleOutputPath" : "F:\\My Apps\\ReskoolerFaceSDK-iOS\\.build\\index-build\\x86_64-unknown-windows-msvc\\debug\\Modules\\ReskoolerFaceSDKTests.swiftmodule",
+      "objects" : [
+        "F:\\My Apps\\ReskoolerFaceSDK-iOS\\.build\\index-build\\x86_64-unknown-windows-msvc\\debug\\ReskoolerFaceSDKTests.build\\FaceQualityGateTests.swift.o",
+        "F:\\My Apps\\ReskoolerFaceSDK-iOS\\.build\\index-build\\x86_64-unknown-windows-msvc\\debug\\ReskoolerFaceSDKTests.build\\FaceRecognizerTests.swift.o",
+        "F:\\My Apps\\ReskoolerFaceSDK-iOS\\.build\\index-build\\x86_64-unknown-windows-msvc\\debug\\ReskoolerFaceSDKTests.build\\FaceSimilarityTests.swift.o"
+      ],
+      "otherArguments" : [
+        "-target",
+        "x86_64-unknown-windows-msvc",
+        "-incremental",
+        "-enable-batch-mode",
+        "-serialize-diagnostics",
+        "-Onone",
+        "-enable-testing",
+        "-Xfrontend",
+        "-enable-cross-import-overlays",
+        "-j12",
+        "-DSWIFT_PACKAGE",
+        "-DDEBUG",
+        "-DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE",
+        "-module-cache-path",
+        "F:\\My Apps\\ReskoolerFaceSDK-iOS\\.build\\index-build\\x86_64-unknown-windows-msvc\\debug\\ModuleCache",
+        "-parseable-output",
+        "-parse-as-library",
+        "-static",
+        "-swift-version",
+        "5",
+        "-Xfrontend",
+        "-experimental-lazy-typecheck",
+        "-Xfrontend",
+        "-experimental-skip-all-function-bodies",
+        "-Xfrontend",
+        "-experimental-allow-module-with-compiler-errors",
+        "-Xfrontend",
+        "-empty-abi-descriptor",
+        "-sdk",
+        "C:\\Users\\ganes\\AppData\\Local\\Programs\\Swift\\Platforms\\6.4.2\\Windows.platform\\Developer\\SDKs\\Windows.sdk",
+        "-libc",
+        "MD",
+        "-I",
+        "C:\\Users\\ganes\\AppData\\Local\\Programs\\Swift\\Platforms\\6.4.2\\Windows.platform\\Developer\\Library\\XCTest-6.4.2\\usr\\lib\\swift\\windows",
+        "-I",
+        "C:\\Users\\ganes\\AppData\\Local\\Programs\\Swift\\Platforms\\6.4.2\\Windows.platform\\Developer\\Library\\XCTest-6.4.2\\usr\\lib\\swift\\windows\\x86_64",
+        "-L",
+        "C:\\Users\\ganes\\AppData\\Local\\Programs\\Swift\\Platforms\\6.4.2\\Windows.platform\\Developer\\Library\\XCTest-6.4.2\\usr\\lib\\swift\\windows\\x86_64",
+        "-I",
+        "C:\\Users\\ganes\\AppData\\Local\\Programs\\Swift\\Platforms\\6.4.2\\Windows.platform\\Developer\\Library\\Testing-6.4.2\\usr\\lib\\swift\\windows",
+        "-L",
+        "C:\\Users\\ganes\\AppData\\Local\\Programs\\Swift\\Platforms\\6.4.2\\Windows.platform\\Developer\\Library\\Testing-6.4.2\\usr\\lib\\swift\\windows\\x86_64",
+        "-use-ld=lld",
+        "-g",
+        "-use-ld=lld",
+        "-Xcc",
+        "-D_MT",
+        "-Xcc",
+        "-D_DLL",
+        "-Xcc",
+        "-Xclang",
+        "-Xcc",
+        "--dependent-lib=msvcrt",
+        "-Xcc",
+        "-gdwarf",
+        "-package-name",
+        "reskoolerfacesdk_ios"
+      ],
+      "outputFileMapPath" : "F:\\My Apps\\ReskoolerFaceSDK-iOS\\.build\\index-build\\x86_64-unknown-windows-msvc\\debug\\ReskoolerFaceSDKTests.build\\output-file-map.json",
+      "outputs" : [
+        {
+          "kind" : "file",
+          "name" : "F:\\My Apps\\ReskoolerFaceSDK-iOS\\.build\\index-build\\x86_64-unknown-windows-msvc\\debug\\Modules\\ReskoolerFaceSDKTests.swiftmodule"
+        }
+      ],
+      "prepareForIndexing" : true,
+      "sources" : [
+        "F:\\My Apps\\ReskoolerFaceSDK-iOS\\Tests\\ReskoolerFaceSDKTests\\FaceQualityGateTests.swift",
+        "F:\\My Apps\\ReskoolerFaceSDK-iOS\\Tests\\ReskoolerFaceSDKTests\\FaceRecognizerTests.swift",
+        "F:\\My Apps\\ReskoolerFaceSDK-iOS\\Tests\\ReskoolerFaceSDKTests\\FaceSimilarityTests.swift"
+      ],
+      "tempsPath" : "F:\\My Apps\\ReskoolerFaceSDK-iOS\\.build\\index-build\\x86_64-unknown-windows-msvc\\debug\\ReskoolerFaceSDKTests.build",
+      "wholeModuleOptimization" : false
+    }
+  },
+  "swiftFrontendCommands" : {
+
+  },
+  "swiftTargetScanArgs" : {
+    "ReskoolerFaceSDK" : [
+      "C:\\Users\\ganes\\AppData\\Local\\Programs\\Swift\\Toolchains\\6.4.2+Asserts\\usr\\bin\\swiftc.exe",
+      "-module-name",
+      "ReskoolerFaceSDK",
+      "-package-name",
+      "reskoolerfacesdk_ios",
+      "-c",
+      "F:\\My Apps\\ReskoolerFaceSDK-iOS\\Sources\\ReskoolerFaceSDK\\AntiSpoof\\AntiSpoofEngine.swift",
+      "F:\\My Apps\\ReskoolerFaceSDK-iOS\\Sources\\ReskoolerFaceSDK\\Camera\\CameraManager.swift",
+      "F:\\My Apps\\ReskoolerFaceSDK-iOS\\Sources\\ReskoolerFaceSDK\\Detection\\FaceDetectorEngine.swift",
+      "F:\\My Apps\\ReskoolerFaceSDK-iOS\\Sources\\ReskoolerFaceSDK\\Enrollment\\EnrollmentSession.swift",
+      "F:\\My Apps\\ReskoolerFaceSDK-iOS\\Sources\\ReskoolerFaceSDK\\FaceSDK.swift",
+      "F:\\My Apps\\ReskoolerFaceSDK-iOS\\Sources\\ReskoolerFaceSDK\\FaceSdkModels.swift",
+      "F:\\My Apps\\ReskoolerFaceSDK-iOS\\Sources\\ReskoolerFaceSDK\\Quality\\FaceQuality.swift",
+      "F:\\My Apps\\ReskoolerFaceSDK-iOS\\Sources\\ReskoolerFaceSDK\\Recognition\\EmbeddingGallery.swift",
+      "F:\\My Apps\\ReskoolerFaceSDK-iOS\\Sources\\ReskoolerFaceSDK\\Recognition\\FaceEmbeddingEngine.swift",
+      "F:\\My Apps\\ReskoolerFaceSDK-iOS\\Sources\\ReskoolerFaceSDK\\Recognition\\FaceRecognizer.swift",
+      "F:\\My Apps\\ReskoolerFaceSDK-iOS\\Sources\\ReskoolerFaceSDK\\Recognition\\FaceSimilarity.swift",
+      "F:\\My Apps\\ReskoolerFaceSDK-iOS\\Sources\\ReskoolerFaceSDK\\Result\\FaceResult.swift",
+      "F:\\My Apps\\ReskoolerFaceSDK-iOS\\Sources\\ReskoolerFaceSDK\\Sessions\\KioskSession.swift",
+      "F:\\My Apps\\ReskoolerFaceSDK-iOS\\Sources\\ReskoolerFaceSDK\\Sessions\\KioskWatchdog.swift",
+      "F:\\My Apps\\ReskoolerFaceSDK-iOS\\Sources\\ReskoolerFaceSDK\\Sessions\\SelfAttendanceSession.swift",
+      "F:\\My Apps\\ReskoolerFaceSDK-iOS\\Sources\\ReskoolerFaceSDK\\Tracking\\TrackSession.swift",
+      "F:\\My Apps\\ReskoolerFaceSDK-iOS\\Sources\\ReskoolerFaceSDK\\Utilities\\ImageProcessor.swift",
+      "F:\\My Apps\\ReskoolerFaceSDK-iOS\\Sources\\ReskoolerFaceSDK\\Utilities\\VideoToolboxHeader.swift",
+      "F:\\My Apps\\ReskoolerFaceSDK-iOS\\.build\\index-build\\x86_64-unknown-windows-msvc\\debug\\ReskoolerFaceSDK.build\\DerivedSources\\resource_bundle_accessor.swift",
+      "-I",
+      "F:\\My Apps\\ReskoolerFaceSDK-iOS\\.build\\index-build\\x86_64-unknown-windows-msvc\\debug\\Modules",
+      "-target",
+      "x86_64-unknown-windows-msvc",
+      "-incremental",
+      "-enable-batch-mode",
+      "-serialize-diagnostics",
+      "-Onone",
+      "-enable-testing",
+      "-j12",
+      "-DSWIFT_PACKAGE",
+      "-DDEBUG",
+      "-DSWIFT_MODULE_RESOURCE_BUNDLE_AVAILABLE",
+      "-module-cache-path",
+      "F:\\My Apps\\ReskoolerFaceSDK-iOS\\.build\\index-build\\x86_64-unknown-windows-msvc\\debug\\ModuleCache",
+      "-parseable-output",
+      "-parse-as-library",
+      "-static",
+      "-emit-objc-header",
+      "-emit-objc-header-path",
+      "F:\\My Apps\\ReskoolerFaceSDK-iOS\\.build\\index-build\\x86_64-unknown-windows-msvc\\debug\\ReskoolerFaceSDK.build\\include\\ReskoolerFaceSDK-Swift.h",
+      "-swift-version",
+      "5",
+      "-Xfrontend",
+      "-experimental-lazy-typecheck",
+      "-Xfrontend",
+      "-experimental-skip-all-function-bodies",
+      "-Xfrontend",
+      "-experimental-allow-module-with-compiler-errors",
+      "-Xfrontend",
+      "-empty-abi-descriptor",
+      "-sdk",
+      "C:\\Users\\ganes\\AppData\\Local\\Programs\\Swift\\Platforms\\6.4.2\\Windows.platform\\Developer\\SDKs\\Windows.sdk",
+      "-libc",
+      "MD",
+      "-I",
+      "C:\\Users\\ganes\\AppData\\Local\\Programs\\Swift\\Platforms\\6.4.2\\Windows.platform\\Developer\\Library\\XCTest-6.4.2\\usr\\lib\\swift\\windows",
+      "-I",
+      "C:\\Users\\ganes\\AppData\\Local\\Programs\\Swift\\Platforms\\6.4.2\\Windows.platform\\Developer\\Library\\XCTest-6.4.2\\usr\\lib\\swift\\windows\\x86_64",
+      "-L",
+      "C:\\Users\\ganes\\AppData\\Local\\Programs\\Swift\\Platforms\\6.4.2\\Windows.platform\\Developer\\Library\\XCTest-6.4.2\\usr\\lib\\swift\\windows\\x86_64",
+      "-I",
+      "C:\\Users\\ganes\\AppData\\Local\\Programs\\Swift\\Platforms\\6.4.2\\Windows.platform\\Developer\\Library\\Testing-6.4.2\\usr\\lib\\swift\\windows",
+      "-L",
+      "C:\\Users\\ganes\\AppData\\Local\\Programs\\Swift\\Platforms\\6.4.2\\Windows.platform\\Developer\\Library\\Testing-6.4.2\\usr\\lib\\swift\\windows\\x86_64",
+      "-use-ld=lld",
+      "-g",
+      "-use-ld=lld",
+      "-Xcc",
+      "-D_MT",
+      "-Xcc",
+      "-D_DLL",
+      "-Xcc",
+      "-Xclang",
+      "-Xcc",
+      "--dependent-lib=msvcrt",
+      "-Xcc",
+      "-gdwarf",
+      "-package-name",
+      "reskoolerfacesdk_ios",
+      "-driver-use-frontend-path",
+      "C:\\Users\\ganes\\AppData\\Local\\Programs\\Swift\\Toolchains\\6.4.2+Asserts\\usr\\bin\\swiftc.exe"
+    ],
+    "ReskoolerFaceSDKPackageDiscoveredTests" : [
+      "C:\\Users\\ganes\\AppData\\Local\\Programs\\Swift\\Toolchains\\6.4.2+Asserts\\usr\\bin\\swiftc.exe",
+      "-module-name",
+      "ReskoolerFaceSDKPackageDiscoveredTests",
+      "-package-name",
+      "reskoolerfacesdk_ios",
+      "-c",
+      "F:\\My Apps\\ReskoolerFaceSDK-iOS\\.build\\index-build\\x86_64-unknown-windows-msvc\\debug\\ReskoolerFaceSDKPackageDiscoveredTests.derived\\ReskoolerFaceSDKTests.swift",
+      "F:\\My Apps\\ReskoolerFaceSDK-iOS\\.build\\index-build\\x86_64-unknown-windows-msvc\\debug\\ReskoolerFaceSDKPackageDiscoveredTests.derived\\all-discovered-tests.swift",
+      "-I",
+      "F:\\My Apps\\ReskoolerFaceSDK-iOS\\.build\\index-build\\x86_64-unknown-windows-msvc\\debug\\Modules",
+      "-target",
+      "x86_64-unknown-windows-msvc",
+      "-incremental",
+      "-enable-batch-mode",
+      "-serialize-diagnostics",
+      "-Onone",
+      "-enable-testing",
+      "-Xfrontend",
+      "-enable-cross-import-overlays",
+      "-j12",
+      "-DSWIFT_PACKAGE",
+      "-DDEBUG",
+      "-DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE",
+      "-module-cache-path",
+      "F:\\My Apps\\ReskoolerFaceSDK-iOS\\.build\\index-build\\x86_64-unknown-windows-msvc\\debug\\ModuleCache",
+      "-parseable-output",
+      "-parse-as-library",
+      "-static",
+      "-emit-objc-header",
+      "-emit-objc-header-path",
+      "F:\\My Apps\\ReskoolerFaceSDK-iOS\\.build\\index-build\\x86_64-unknown-windows-msvc\\debug\\ReskoolerFaceSDKPackageDiscoveredTests.build\\include\\ReskoolerFaceSDKPackageDiscoveredTests-Swift.h",
+      "-Xfrontend",
+      "-experimental-lazy-typecheck",
+      "-Xfrontend",
+      "-experimental-skip-all-function-bodies",
+      "-Xfrontend",
+      "-experimental-allow-module-with-compiler-errors",
+      "-Xfrontend",
+      "-empty-abi-descriptor",
+      "-sdk",
+      "C:\\Users\\ganes\\AppData\\Local\\Programs\\Swift\\Platforms\\6.4.2\\Windows.platform\\Developer\\SDKs\\Windows.sdk",
+      "-libc",
+      "MD",
+      "-I",
+      "C:\\Users\\ganes\\AppData\\Local\\Programs\\Swift\\Platforms\\6.4.2\\Windows.platform\\Developer\\Library\\XCTest-6.4.2\\usr\\lib\\swift\\windows",
+      "-I",
+      "C:\\Users\\ganes\\AppData\\Local\\Programs\\Swift\\Platforms\\6.4.2\\Windows.platform\\Developer\\Library\\XCTest-6.4.2\\usr\\lib\\swift\\windows\\x86_64",
+      "-L",
+      "C:\\Users\\ganes\\AppData\\Local\\Programs\\Swift\\Platforms\\6.4.2\\Windows.platform\\Developer\\Library\\XCTest-6.4.2\\usr\\lib\\swift\\windows\\x86_64",
+      "-I",
+      "C:\\Users\\ganes\\AppData\\Local\\Programs\\Swift\\Platforms\\6.4.2\\Windows.platform\\Developer\\Library\\Testing-6.4.2\\usr\\lib\\swift\\windows",
+      "-L",
+      "C:\\Users\\ganes\\AppData\\Local\\Programs\\Swift\\Platforms\\6.4.2\\Windows.platform\\Developer\\Library\\Testing-6.4.2\\usr\\lib\\swift\\windows\\x86_64",
+      "-use-ld=lld",
+      "-g",
+      "-use-ld=lld",
+      "-Xcc",
+      "-D_MT",
+      "-Xcc",
+      "-D_DLL",
+      "-Xcc",
+      "-Xclang",
+      "-Xcc",
+      "--dependent-lib=msvcrt",
+      "-Xcc",
+      "-gdwarf",
+      "-package-name",
+      "reskoolerfacesdk_ios",
+      "-driver-use-frontend-path",
+      "C:\\Users\\ganes\\AppData\\Local\\Programs\\Swift\\Toolchains\\6.4.2+Asserts\\usr\\bin\\swiftc.exe"
+    ],
+    "ReskoolerFaceSDKPackageTests" : [
+      "C:\\Users\\ganes\\AppData\\Local\\Programs\\Swift\\Toolchains\\6.4.2+Asserts\\usr\\bin\\swiftc.exe",
+      "-module-name",
+      "ReskoolerFaceSDKPackageTests",
+      "-package-name",
+      "reskoolerfacesdk_ios",
+      "-c",
+      "F:\\My Apps\\ReskoolerFaceSDK-iOS\\.build\\index-build\\x86_64-unknown-windows-msvc\\debug\\ReskoolerFaceSDKPackageTests.derived\\runner.swift",
+      "-I",
+      "F:\\My Apps\\ReskoolerFaceSDK-iOS\\.build\\index-build\\x86_64-unknown-windows-msvc\\debug\\Modules",
+      "-target",
+      "x86_64-unknown-windows-msvc",
+      "-incremental",
+      "-enable-batch-mode",
+      "-serialize-diagnostics",
+      "-Onone",
+      "-enable-testing",
+      "-Xfrontend",
+      "-enable-cross-import-overlays",
+      "-j12",
+      "-DSWIFT_PACKAGE",
+      "-DDEBUG",
+      "-DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE",
+      "-module-cache-path",
+      "F:\\My Apps\\ReskoolerFaceSDK-iOS\\.build\\index-build\\x86_64-unknown-windows-msvc\\debug\\ModuleCache",
+      "-parseable-output",
+      "-parse-as-library",
+      "-static",
+      "-emit-objc-header",
+      "-emit-objc-header-path",
+      "F:\\My Apps\\ReskoolerFaceSDK-iOS\\.build\\index-build\\x86_64-unknown-windows-msvc\\debug\\ReskoolerFaceSDKPackageTests.build\\include\\ReskoolerFaceSDKPackageTests-Swift.h",
+      "-Xfrontend",
+      "-experimental-lazy-typecheck",
+      "-Xfrontend",
+      "-experimental-skip-all-function-bodies",
+      "-Xfrontend",
+      "-experimental-allow-module-with-compiler-errors",
+      "-Xfrontend",
+      "-empty-abi-descriptor",
+      "-sdk",
+      "C:\\Users\\ganes\\AppData\\Local\\Programs\\Swift\\Platforms\\6.4.2\\Windows.platform\\Developer\\SDKs\\Windows.sdk",
+      "-libc",
+      "MD",
+      "-I",
+      "C:\\Users\\ganes\\AppData\\Local\\Programs\\Swift\\Platforms\\6.4.2\\Windows.platform\\Developer\\Library\\XCTest-6.4.2\\usr\\lib\\swift\\windows",
+      "-I",
+      "C:\\Users\\ganes\\AppData\\Local\\Programs\\Swift\\Platforms\\6.4.2\\Windows.platform\\Developer\\Library\\XCTest-6.4.2\\usr\\lib\\swift\\windows\\x86_64",
+      "-L",
+      "C:\\Users\\ganes\\AppData\\Local\\Programs\\Swift\\Platforms\\6.4.2\\Windows.platform\\Developer\\Library\\XCTest-6.4.2\\usr\\lib\\swift\\windows\\x86_64",
+      "-I",
+      "C:\\Users\\ganes\\AppData\\Local\\Programs\\Swift\\Platforms\\6.4.2\\Windows.platform\\Developer\\Library\\Testing-6.4.2\\usr\\lib\\swift\\windows",
+      "-L",
+      "C:\\Users\\ganes\\AppData\\Local\\Programs\\Swift\\Platforms\\6.4.2\\Windows.platform\\Developer\\Library\\Testing-6.4.2\\usr\\lib\\swift\\windows\\x86_64",
+      "-use-ld=lld",
+      "-g",
+      "-use-ld=lld",
+      "-Xcc",
+      "-D_MT",
+      "-Xcc",
+      "-D_DLL",
+      "-Xcc",
+      "-Xclang",
+      "-Xcc",
+      "--dependent-lib=msvcrt",
+      "-Xcc",
+      "-gdwarf",
+      "-package-name",
+      "reskoolerfacesdk_ios",
+      "-driver-use-frontend-path",
+      "C:\\Users\\ganes\\AppData\\Local\\Programs\\Swift\\Toolchains\\6.4.2+Asserts\\usr\\bin\\swiftc.exe"
+    ],
+    "ReskoolerFaceSDKTests" : [
+      "C:\\Users\\ganes\\AppData\\Local\\Programs\\Swift\\Toolchains\\6.4.2+Asserts\\usr\\bin\\swiftc.exe",
+      "-module-name",
+      "ReskoolerFaceSDKTests",
+      "-package-name",
+      "reskoolerfacesdk_ios",
+      "-c",
+      "F:\\My Apps\\ReskoolerFaceSDK-iOS\\Tests\\ReskoolerFaceSDKTests\\FaceQualityGateTests.swift",
+      "F:\\My Apps\\ReskoolerFaceSDK-iOS\\Tests\\ReskoolerFaceSDKTests\\FaceRecognizerTests.swift",
+      "F:\\My Apps\\ReskoolerFaceSDK-iOS\\Tests\\ReskoolerFaceSDKTests\\FaceSimilarityTests.swift",
+      "-I",
+      "F:\\My Apps\\ReskoolerFaceSDK-iOS\\.build\\index-build\\x86_64-unknown-windows-msvc\\debug\\Modules",
+      "-target",
+      "x86_64-unknown-windows-msvc",
+      "-incremental",
+      "-enable-batch-mode",
+      "-serialize-diagnostics",
+      "-Onone",
+      "-enable-testing",
+      "-Xfrontend",
+      "-enable-cross-import-overlays",
+      "-j12",
+      "-DSWIFT_PACKAGE",
+      "-DDEBUG",
+      "-DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE",
+      "-module-cache-path",
+      "F:\\My Apps\\ReskoolerFaceSDK-iOS\\.build\\index-build\\x86_64-unknown-windows-msvc\\debug\\ModuleCache",
+      "-parseable-output",
+      "-parse-as-library",
+      "-static",
+      "-swift-version",
+      "5",
+      "-Xfrontend",
+      "-experimental-lazy-typecheck",
+      "-Xfrontend",
+      "-experimental-skip-all-function-bodies",
+      "-Xfrontend",
+      "-experimental-allow-module-with-compiler-errors",
+      "-Xfrontend",
+      "-empty-abi-descriptor",
+      "-sdk",
+      "C:\\Users\\ganes\\AppData\\Local\\Programs\\Swift\\Platforms\\6.4.2\\Windows.platform\\Developer\\SDKs\\Windows.sdk",
+      "-libc",
+      "MD",
+      "-I",
+      "C:\\Users\\ganes\\AppData\\Local\\Programs\\Swift\\Platforms\\6.4.2\\Windows.platform\\Developer\\Library\\XCTest-6.4.2\\usr\\lib\\swift\\windows",
+      "-I",
+      "C:\\Users\\ganes\\AppData\\Local\\Programs\\Swift\\Platforms\\6.4.2\\Windows.platform\\Developer\\Library\\XCTest-6.4.2\\usr\\lib\\swift\\windows\\x86_64",
+      "-L",
+      "C:\\Users\\ganes\\AppData\\Local\\Programs\\Swift\\Platforms\\6.4.2\\Windows.platform\\Developer\\Library\\XCTest-6.4.2\\usr\\lib\\swift\\windows\\x86_64",
+      "-I",
+      "C:\\Users\\ganes\\AppData\\Local\\Programs\\Swift\\Platforms\\6.4.2\\Windows.platform\\Developer\\Library\\Testing-6.4.2\\usr\\lib\\swift\\windows",
+      "-L",
+      "C:\\Users\\ganes\\AppData\\Local\\Programs\\Swift\\Platforms\\6.4.2\\Windows.platform\\Developer\\Library\\Testing-6.4.2\\usr\\lib\\swift\\windows\\x86_64",
+      "-use-ld=lld",
+      "-g",
+      "-use-ld=lld",
+      "-Xcc",
+      "-D_MT",
+      "-Xcc",
+      "-D_DLL",
+      "-Xcc",
+      "-Xclang",
+      "-Xcc",
+      "--dependent-lib=msvcrt",
+      "-Xcc",
+      "-gdwarf",
+      "-package-name",
+      "reskoolerfacesdk_ios",
+      "-driver-use-frontend-path",
+      "C:\\Users\\ganes\\AppData\\Local\\Programs\\Swift\\Toolchains\\6.4.2+Asserts\\usr\\bin\\swiftc.exe"
+    ]
+  },
+  "targetDependencyMap" : {
+    "ReskoolerFaceSDK" : [
+
+    ],
+    "ReskoolerFaceSDKPackageDiscoveredTests" : [
+      "ReskoolerFaceSDKTests",
+      "ReskoolerFaceSDK"
+    ],
+    "ReskoolerFaceSDKPackageTests" : [
+      "ReskoolerFaceSDKPackageDiscoveredTests",
+      "ReskoolerFaceSDKTests",
+      "ReskoolerFaceSDK"
+    ],
+    "ReskoolerFaceSDKTests" : [
+      "ReskoolerFaceSDK"
+    ]
+  },
+  "testDiscoveryCommands" : {
+
+  },
+  "testEntryPointCommands" : {
+
+  },
+  "traitConfiguration" : {
+    "default" : [
+      {
+
+      }
+    ]
+  },
+  "writeCommands" : {
+    "F:\\My Apps\\ReskoolerFaceSDK-iOS\\.build\\index-build\\x86_64-unknown-windows-msvc\\debug\\ReskoolerFaceSDK.build\\sources" : {
+      "alwaysOutOfDate" : false,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<sources-file-list>"
+        },
+        {
+          "kind" : "file",
+          "name" : "F:\\My Apps\\ReskoolerFaceSDK-iOS\\Sources\\ReskoolerFaceSDK\\AntiSpoof\\AntiSpoofEngine.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "F:\\My Apps\\ReskoolerFaceSDK-iOS\\Sources\\ReskoolerFaceSDK\\Camera\\CameraManager.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "F:\\My Apps\\ReskoolerFaceSDK-iOS\\Sources\\ReskoolerFaceSDK\\Detection\\FaceDetectorEngine.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "F:\\My Apps\\ReskoolerFaceSDK-iOS\\Sources\\ReskoolerFaceSDK\\Enrollment\\EnrollmentSession.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "F:\\My Apps\\ReskoolerFaceSDK-iOS\\Sources\\ReskoolerFaceSDK\\FaceSDK.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "F:\\My Apps\\ReskoolerFaceSDK-iOS\\Sources\\ReskoolerFaceSDK\\FaceSdkModels.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "F:\\My Apps\\ReskoolerFaceSDK-iOS\\Sources\\ReskoolerFaceSDK\\Quality\\FaceQuality.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "F:\\My Apps\\ReskoolerFaceSDK-iOS\\Sources\\ReskoolerFaceSDK\\Recognition\\EmbeddingGallery.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "F:\\My Apps\\ReskoolerFaceSDK-iOS\\Sources\\ReskoolerFaceSDK\\Recognition\\FaceEmbeddingEngine.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "F:\\My Apps\\ReskoolerFaceSDK-iOS\\Sources\\ReskoolerFaceSDK\\Recognition\\FaceRecognizer.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "F:\\My Apps\\ReskoolerFaceSDK-iOS\\Sources\\ReskoolerFaceSDK\\Recognition\\FaceSimilarity.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "F:\\My Apps\\ReskoolerFaceSDK-iOS\\Sources\\ReskoolerFaceSDK\\Result\\FaceResult.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "F:\\My Apps\\ReskoolerFaceSDK-iOS\\Sources\\ReskoolerFaceSDK\\Sessions\\KioskSession.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "F:\\My Apps\\ReskoolerFaceSDK-iOS\\Sources\\ReskoolerFaceSDK\\Sessions\\KioskWatchdog.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "F:\\My Apps\\ReskoolerFaceSDK-iOS\\Sources\\ReskoolerFaceSDK\\Sessions\\SelfAttendanceSession.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "F:\\My Apps\\ReskoolerFaceSDK-iOS\\Sources\\ReskoolerFaceSDK\\Tracking\\TrackSession.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "F:\\My Apps\\ReskoolerFaceSDK-iOS\\Sources\\ReskoolerFaceSDK\\Utilities\\ImageProcessor.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "F:\\My Apps\\ReskoolerFaceSDK-iOS\\Sources\\ReskoolerFaceSDK\\Utilities\\VideoToolboxHeader.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "F:\\My Apps\\ReskoolerFaceSDK-iOS\\.build\\index-build\\x86_64-unknown-windows-msvc\\debug\\ReskoolerFaceSDK.build\\DerivedSources\\resource_bundle_accessor.swift"
+        }
+      ],
+      "outputFilePath" : "F:\\My Apps\\ReskoolerFaceSDK-iOS\\.build\\index-build\\x86_64-unknown-windows-msvc\\debug\\ReskoolerFaceSDK.build\\sources"
+    },
+    "F:\\My Apps\\ReskoolerFaceSDK-iOS\\.build\\index-build\\x86_64-unknown-windows-msvc\\debug\\ReskoolerFaceSDKPackageDiscoveredTests.build\\sources" : {
+      "alwaysOutOfDate" : false,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<sources-file-list>"
+        },
+        {
+          "kind" : "file",
+          "name" : "F:\\My Apps\\ReskoolerFaceSDK-iOS\\.build\\index-build\\x86_64-unknown-windows-msvc\\debug\\ReskoolerFaceSDKPackageDiscoveredTests.derived\\ReskoolerFaceSDKTests.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "F:\\My Apps\\ReskoolerFaceSDK-iOS\\.build\\index-build\\x86_64-unknown-windows-msvc\\debug\\ReskoolerFaceSDKPackageDiscoveredTests.derived\\all-discovered-tests.swift"
+        }
+      ],
+      "outputFilePath" : "F:\\My Apps\\ReskoolerFaceSDK-iOS\\.build\\index-build\\x86_64-unknown-windows-msvc\\debug\\ReskoolerFaceSDKPackageDiscoveredTests.build\\sources"
+    },
+    "F:\\My Apps\\ReskoolerFaceSDK-iOS\\.build\\index-build\\x86_64-unknown-windows-msvc\\debug\\ReskoolerFaceSDKPackageTests.build\\sources" : {
+      "alwaysOutOfDate" : false,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<sources-file-list>"
+        },
+        {
+          "kind" : "file",
+          "name" : "F:\\My Apps\\ReskoolerFaceSDK-iOS\\.build\\index-build\\x86_64-unknown-windows-msvc\\debug\\ReskoolerFaceSDKPackageTests.derived\\runner.swift"
+        }
+      ],
+      "outputFilePath" : "F:\\My Apps\\ReskoolerFaceSDK-iOS\\.build\\index-build\\x86_64-unknown-windows-msvc\\debug\\ReskoolerFaceSDKPackageTests.build\\sources"
+    },
+    "F:\\My Apps\\ReskoolerFaceSDK-iOS\\.build\\index-build\\x86_64-unknown-windows-msvc\\debug\\ReskoolerFaceSDKTests.build\\sources" : {
+      "alwaysOutOfDate" : false,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<sources-file-list>"
+        },
+        {
+          "kind" : "file",
+          "name" : "F:\\My Apps\\ReskoolerFaceSDK-iOS\\Tests\\ReskoolerFaceSDKTests\\FaceQualityGateTests.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "F:\\My Apps\\ReskoolerFaceSDK-iOS\\Tests\\ReskoolerFaceSDKTests\\FaceRecognizerTests.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "F:\\My Apps\\ReskoolerFaceSDK-iOS\\Tests\\ReskoolerFaceSDKTests\\FaceSimilarityTests.swift"
+        }
+      ],
+      "outputFilePath" : "F:\\My Apps\\ReskoolerFaceSDK-iOS\\.build\\index-build\\x86_64-unknown-windows-msvc\\debug\\ReskoolerFaceSDKTests.build\\sources"
+    },
+    "F:\\My Apps\\ReskoolerFaceSDK-iOS\\.build\\index-build\\x86_64-unknown-windows-msvc\\debug\\swift-version-37C0B321409C1375.txt" : {
+      "alwaysOutOfDate" : true,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<swift-get-version>"
+        },
+        {
+          "kind" : "file",
+          "name" : "C:\\Users\\ganes\\AppData\\Local\\Programs\\Swift\\Toolchains\\6.4.2+Asserts\\usr\\bin\\swiftc.exe"
+        }
+      ],
+      "outputFilePath" : "F:\\My Apps\\ReskoolerFaceSDK-iOS\\.build\\index-build\\x86_64-unknown-windows-msvc\\debug\\swift-version-37C0B321409C1375.txt"
+    }
+  }
+}

@@ -1,0 +1,119 @@
+{
+  "": {
+    "swift-dependencies": "F:\\My Apps\\ReskoolerFaceSDK-iOS\\.build\\index-build\\x86_64-unknown-windows-msvc\\debug\\ReskoolerFaceSDK.build\\primary.swiftdeps"
+  },
+  "F:\\My Apps\\ReskoolerFaceSDK-iOS\\Sources\\ReskoolerFaceSDK\\AntiSpoof\\AntiSpoofEngine.swift": {
+    "dependencies": "F:\\My Apps\\ReskoolerFaceSDK-iOS\\.build\\index-build\\x86_64-unknown-windows-msvc\\debug\\ReskoolerFaceSDK.build\\AntiSpoofEngine.d",
+    "object": "F:\\My Apps\\ReskoolerFaceSDK-iOS\\.build\\index-build\\x86_64-unknown-windows-msvc\\debug\\ReskoolerFaceSDK.build\\AntiSpoofEngine.swift.o",
+    "swiftmodule": "F:\\My Apps\\ReskoolerFaceSDK-iOS\\.build\\index-build\\x86_64-unknown-windows-msvc\\debug\\ReskoolerFaceSDK.build\\AntiSpoofEngine~partial.swiftmodule",
+    "swift-dependencies": "F:\\My Apps\\ReskoolerFaceSDK-iOS\\.build\\index-build\\x86_64-unknown-windows-msvc\\debug\\ReskoolerFaceSDK.build\\AntiSpoofEngine.swiftdeps",
+    "diagnostics": "F:\\My Apps\\ReskoolerFaceSDK-iOS\\.build\\index-build\\x86_64-unknown-windows-msvc\\debug\\ReskoolerFaceSDK.build\\AntiSpoofEngine.dia"  },
+  "F:\\My Apps\\ReskoolerFaceSDK-iOS\\Sources\\ReskoolerFaceSDK\\Camera\\CameraManager.swift": {
+    "dependencies": "F:\\My Apps\\ReskoolerFaceSDK-iOS\\.build\\index-build\\x86_64-unknown-windows-msvc\\debug\\ReskoolerFaceSDK.build\\CameraManager.d",
+    "object": "F:\\My Apps\\ReskoolerFaceSDK-iOS\\.build\\index-build\\x86_64-unknown-windows-msvc\\debug\\ReskoolerFaceSDK.build\\CameraManager.swift.o",
+    "swiftmodule": "F:\\My Apps\\ReskoolerFaceSDK-iOS\\.build\\index-build\\x86_64-unknown-windows-msvc\\debug\\ReskoolerFaceSDK.build\\CameraManager~partial.swiftmodule",
+    "swift-dependencies": "F:\\My Apps\\ReskoolerFaceSDK-iOS\\.build\\index-build\\x86_64-unknown-windows-msvc\\debug\\ReskoolerFaceSDK.build\\CameraManager.swiftdeps",
+    "diagnostics": "F:\\My Apps\\ReskoolerFaceSDK-iOS\\.build\\index-build\\x86_64-unknown-windows-msvc\\debug\\ReskoolerFaceSDK.build\\CameraManager.dia"  },
+  "F:\\My Apps\\ReskoolerFaceSDK-iOS\\Sources\\ReskoolerFaceSDK\\Detection\\FaceDetectorEngine.swift": {
+    "dependencies": "F:\\My Apps\\ReskoolerFaceSDK-iOS\\.build\\index-build\\x86_64-unknown-windows-msvc\\debug\\ReskoolerFaceSDK.build\\FaceDetectorEngine.d",
+    "object": "F:\\My Apps\\ReskoolerFaceSDK-iOS\\.build\\index-build\\x86_64-unknown-windows-msvc\\debug\\ReskoolerFaceSDK.build\\FaceDetectorEngine.swift.o",
+    "swiftmodule": "F:\\My Apps\\ReskoolerFaceSDK-iOS\\.build\\index-build\\x86_64-unknown-windows-msvc\\debug\\ReskoolerFaceSDK.build\\FaceDetectorEngine~partial.swiftmodule",
+    "swift-dependencies": "F:\\My Apps\\ReskoolerFaceSDK-iOS\\.build\\index-build\\x86_64-unknown-windows-msvc\\debug\\ReskoolerFaceSDK.build\\FaceDetectorEngine.swiftdeps",
+    "diagnostics": "F:\\My Apps\\ReskoolerFaceSDK-iOS\\.build\\index-build\\x86_64-unknown-windows-msvc\\debug\\ReskoolerFaceSDK.build\\FaceDetectorEngine.dia"  },
+  "F:\\My Apps\\ReskoolerFaceSDK-iOS\\Sources\\ReskoolerFaceSDK\\Enrollment\\EnrollmentSession.swift": {
+    "dependencies": "F:\\My Apps\\ReskoolerFaceSDK-iOS\\.build\\index-build\\x86_64-unknown-windows-msvc\\debug\\ReskoolerFaceSDK.build\\EnrollmentSession.d",
+    "object": "F:\\My Apps\\ReskoolerFaceSDK-iOS\\.build\\index-build\\x86_64-unknown-windows-msvc\\debug\\ReskoolerFaceSDK.build\\EnrollmentSession.swift.o",
+    "swiftmodule": "F:\\My Apps\\ReskoolerFaceSDK-iOS\\.build\\index-build\\x86_64-unknown-windows-msvc\\debug\\ReskoolerFaceSDK.build\\EnrollmentSession~partial.swiftmodule",
+    "swift-dependencies": "F:\\My Apps\\ReskoolerFaceSDK-iOS\\.build\\index-build\\x86_64-unknown-windows-msvc\\debug\\ReskoolerFaceSDK.build\\EnrollmentSession.swiftdeps",
+    "diagnostics": "F:\\My Apps\\ReskoolerFaceSDK-iOS\\.build\\index-build\\x86_64-unknown-windows-msvc\\debug\\ReskoolerFaceSDK.build\\EnrollmentSession.dia"  },
+  "F:\\My Apps\\ReskoolerFaceSDK-iOS\\Sources\\ReskoolerFaceSDK\\FaceSDK.swift": {
+    "dependencies": "F:\\My Apps\\ReskoolerFaceSDK-iOS\\.build\\index-build\\x86_64-unknown-windows-msvc\\debug\\ReskoolerFaceSDK.build\\FaceSDK.d",
+    "object": "F:\\My Apps\\ReskoolerFaceSDK-iOS\\.build\\index-build\\x86_64-unknown-windows-msvc\\debug\\ReskoolerFaceSDK.build\\FaceSDK.swift.o",
+    "swiftmodule": "F:\\My Apps\\ReskoolerFaceSDK-iOS\\.build\\index-build\\x86_64-unknown-windows-msvc\\debug\\ReskoolerFaceSDK.build\\FaceSDK~partial.swiftmodule",
+    "swift-dependencies": "F:\\My Apps\\ReskoolerFaceSDK-iOS\\.build\\index-build\\x86_64-unknown-windows-msvc\\debug\\ReskoolerFaceSDK.build\\FaceSDK.swiftdeps",
+    "diagnostics": "F:\\My Apps\\ReskoolerFaceSDK-iOS\\.build\\index-build\\x86_64-unknown-windows-msvc\\debug\\ReskoolerFaceSDK.build\\FaceSDK.dia"  },
+  "F:\\My Apps\\ReskoolerFaceSDK-iOS\\Sources\\ReskoolerFaceSDK\\FaceSdkModels.swift": {
+    "dependencies": "F:\\My Apps\\ReskoolerFaceSDK-iOS\\.build\\index-build\\x86_64-unknown-windows-msvc\\debug\\ReskoolerFaceSDK.build\\FaceSdkModels.d",
+    "object": "F:\\My Apps\\ReskoolerFaceSDK-iOS\\.build\\index-build\\x86_64-unknown-windows-msvc\\debug\\ReskoolerFaceSDK.build\\FaceSdkModels.swift.o",
+    "swiftmodule": "F:\\My Apps\\ReskoolerFaceSDK-iOS\\.build\\index-build\\x86_64-unknown-windows-msvc\\debug\\ReskoolerFaceSDK.build\\FaceSdkModels~partial.swiftmodule",
+    "swift-dependencies": "F:\\My Apps\\ReskoolerFaceSDK-iOS\\.build\\index-build\\x86_64-unknown-windows-msvc\\debug\\ReskoolerFaceSDK.build\\FaceSdkModels.swiftdeps",
+    "diagnostics": "F:\\My Apps\\ReskoolerFaceSDK-iOS\\.build\\index-build\\x86_64-unknown-windows-msvc\\debug\\ReskoolerFaceSDK.build\\FaceSdkModels.dia"  },
+  "F:\\My Apps\\ReskoolerFaceSDK-iOS\\Sources\\ReskoolerFaceSDK\\Quality\\FaceQuality.swift": {
+    "dependencies": "F:\\My Apps\\ReskoolerFaceSDK-iOS\\.build\\index-build\\x86_64-unknown-windows-msvc\\debug\\ReskoolerFaceSDK.build\\FaceQuality.d",
+    "object": "F:\\My Apps\\ReskoolerFaceSDK-iOS\\.build\\index-build\\x86_64-unknown-windows-msvc\\debug\\ReskoolerFaceSDK.build\\FaceQuality.swift.o",
+    "swiftmodule": "F:\\My Apps\\ReskoolerFaceSDK-iOS\\.build\\index-build\\x86_64-unknown-windows-msvc\\debug\\ReskoolerFaceSDK.build\\FaceQuality~partial.swiftmodule",
+    "swift-dependencies": "F:\\My Apps\\ReskoolerFaceSDK-iOS\\.build\\index-build\\x86_64-unknown-windows-msvc\\debug\\ReskoolerFaceSDK.build\\FaceQuality.swiftdeps",
+    "diagnostics": "F:\\My Apps\\ReskoolerFaceSDK-iOS\\.build\\index-build\\x86_64-unknown-windows-msvc\\debug\\ReskoolerFaceSDK.build\\FaceQuality.dia"  },
+  "F:\\My Apps\\ReskoolerFaceSDK-iOS\\Sources\\ReskoolerFaceSDK\\Recognition\\EmbeddingGallery.swift": {
+    "dependencies": "F:\\My Apps\\ReskoolerFaceSDK-iOS\\.build\\index-build\\x86_64-unknown-windows-msvc\\debug\\ReskoolerFaceSDK.build\\EmbeddingGallery.d",
+    "object": "F:\\My Apps\\ReskoolerFaceSDK-iOS\\.build\\index-build\\x86_64-unknown-windows-msvc\\debug\\ReskoolerFaceSDK.build\\EmbeddingGallery.swift.o",
+    "swiftmodule": "F:\\My Apps\\ReskoolerFaceSDK-iOS\\.build\\index-build\\x86_64-unknown-windows-msvc\\debug\\ReskoolerFaceSDK.build\\EmbeddingGallery~partial.swiftmodule",
+    "swift-dependencies": "F:\\My Apps\\ReskoolerFaceSDK-iOS\\.build\\index-build\\x86_64-unknown-windows-msvc\\debug\\ReskoolerFaceSDK.build\\EmbeddingGallery.swiftdeps",
+    "diagnostics": "F:\\My Apps\\ReskoolerFaceSDK-iOS\\.build\\index-build\\x86_64-unknown-windows-msvc\\debug\\ReskoolerFaceSDK.build\\EmbeddingGallery.dia"  },
+  "F:\\My Apps\\ReskoolerFaceSDK-iOS\\Sources\\ReskoolerFaceSDK\\Recognition\\FaceEmbeddingEngine.swift": {
+    "dependencies": "F:\\My Apps\\ReskoolerFaceSDK-iOS\\.build\\index-build\\x86_64-unknown-windows-msvc\\debug\\ReskoolerFaceSDK.build\\FaceEmbeddingEngine.d",
+    "object": "F:\\My Apps\\ReskoolerFaceSDK-iOS\\.build\\index-build\\x86_64-unknown-windows-msvc\\debug\\ReskoolerFaceSDK.build\\FaceEmbeddingEngine.swift.o",
+    "swiftmodule": "F:\\My Apps\\ReskoolerFaceSDK-iOS\\.build\\index-build\\x86_64-unknown-windows-msvc\\debug\\ReskoolerFaceSDK.build\\FaceEmbeddingEngine~partial.swiftmodule",
+    "swift-dependencies": "F:\\My Apps\\ReskoolerFaceSDK-iOS\\.build\\index-build\\x86_64-unknown-windows-msvc\\debug\\ReskoolerFaceSDK.build\\FaceEmbeddingEngine.swiftdeps",
+    "diagnostics": "F:\\My Apps\\ReskoolerFaceSDK-iOS\\.build\\index-build\\x86_64-unknown-windows-msvc\\debug\\ReskoolerFaceSDK.build\\FaceEmbeddingEngine.dia"  },
+  "F:\\My Apps\\ReskoolerFaceSDK-iOS\\Sources\\ReskoolerFaceSDK\\Recognition\\FaceRecognizer.swift": {
+    "dependencies": "F:\\My Apps\\ReskoolerFaceSDK-iOS\\.build\\index-build\\x86_64-unknown-windows-msvc\\debug\\ReskoolerFaceSDK.build\\FaceRecognizer.d",
+    "object": "F:\\My Apps\\ReskoolerFaceSDK-iOS\\.build\\index-build\\x86_64-unknown-windows-msvc\\debug\\ReskoolerFaceSDK.build\\FaceRecognizer.swift.o",
+    "swiftmodule": "F:\\My Apps\\ReskoolerFaceSDK-iOS\\.build\\index-build\\x86_64-unknown-windows-msvc\\debug\\ReskoolerFaceSDK.build\\FaceRecognizer~partial.swiftmodule",
+    "swift-dependencies": "F:\\My Apps\\ReskoolerFaceSDK-iOS\\.build\\index-build\\x86_64-unknown-windows-msvc\\debug\\ReskoolerFaceSDK.build\\FaceRecognizer.swiftdeps",
+    "diagnostics": "F:\\My Apps\\ReskoolerFaceSDK-iOS\\.build\\index-build\\x86_64-unknown-windows-msvc\\debug\\ReskoolerFaceSDK.build\\FaceRecognizer.dia"  },
+  "F:\\My Apps\\ReskoolerFaceSDK-iOS\\Sources\\ReskoolerFaceSDK\\Recognition\\FaceSimilarity.swift": {
+    "dependencies": "F:\\My Apps\\ReskoolerFaceSDK-iOS\\.build\\index-build\\x86_64-unknown-windows-msvc\\debug\\ReskoolerFaceSDK.build\\FaceSimilarity.d",
+    "object": "F:\\My Apps\\ReskoolerFaceSDK-iOS\\.build\\index-build\\x86_64-unknown-windows-msvc\\debug\\ReskoolerFaceSDK.build\\FaceSimilarity.swift.o",
+    "swiftmodule": "F:\\My Apps\\ReskoolerFaceSDK-iOS\\.build\\index-build\\x86_64-unknown-windows-msvc\\debug\\ReskoolerFaceSDK.build\\FaceSimilarity~partial.swiftmodule",
+    "swift-dependencies": "F:\\My Apps\\ReskoolerFaceSDK-iOS\\.build\\index-build\\x86_64-unknown-windows-msvc\\debug\\ReskoolerFaceSDK.build\\FaceSimilarity.swiftdeps",
+    "diagnostics": "F:\\My Apps\\ReskoolerFaceSDK-iOS\\.build\\index-build\\x86_64-unknown-windows-msvc\\debug\\ReskoolerFaceSDK.build\\FaceSimilarity.dia"  },
+  "F:\\My Apps\\ReskoolerFaceSDK-iOS\\Sources\\ReskoolerFaceSDK\\Result\\FaceResult.swift": {
+    "dependencies": "F:\\My Apps\\ReskoolerFaceSDK-iOS\\.build\\index-build\\x86_64-unknown-windows-msvc\\debug\\ReskoolerFaceSDK.build\\FaceResult.d",
+    "object": "F:\\My Apps\\ReskoolerFaceSDK-iOS\\.build\\index-build\\x86_64-unknown-windows-msvc\\debug\\ReskoolerFaceSDK.build\\FaceResult.swift.o",
+    "swiftmodule": "F:\\My Apps\\ReskoolerFaceSDK-iOS\\.build\\index-build\\x86_64-unknown-windows-msvc\\debug\\ReskoolerFaceSDK.build\\FaceResult~partial.swiftmodule",
+    "swift-dependencies": "F:\\My Apps\\ReskoolerFaceSDK-iOS\\.build\\index-build\\x86_64-unknown-windows-msvc\\debug\\ReskoolerFaceSDK.build\\FaceResult.swiftdeps",
+    "diagnostics": "F:\\My Apps\\ReskoolerFaceSDK-iOS\\.build\\index-build\\x86_64-unknown-windows-msvc\\debug\\ReskoolerFaceSDK.build\\FaceResult.dia"  },
+  "F:\\My Apps\\ReskoolerFaceSDK-iOS\\Sources\\ReskoolerFaceSDK\\Sessions\\KioskSession.swift": {
+    "dependencies": "F:\\My Apps\\ReskoolerFaceSDK-iOS\\.build\\index-build\\x86_64-unknown-windows-msvc\\debug\\ReskoolerFaceSDK.build\\KioskSession.d",
+    "object": "F:\\My Apps\\ReskoolerFaceSDK-iOS\\.build\\index-build\\x86_64-unknown-windows-msvc\\debug\\ReskoolerFaceSDK.build\\KioskSession.swift.o",
+    "swiftmodule": "F:\\My Apps\\ReskoolerFaceSDK-iOS\\.build\\index-build\\x86_64-unknown-windows-msvc\\debug\\ReskoolerFaceSDK.build\\KioskSession~partial.swiftmodule",
+    "swift-dependencies": "F:\\My Apps\\ReskoolerFaceSDK-iOS\\.build\\index-build\\x86_64-unknown-windows-msvc\\debug\\ReskoolerFaceSDK.build\\KioskSession.swiftdeps",
+    "diagnostics": "F:\\My Apps\\ReskoolerFaceSDK-iOS\\.build\\index-build\\x86_64-unknown-windows-msvc\\debug\\ReskoolerFaceSDK.build\\KioskSession.dia"  },
+  "F:\\My Apps\\ReskoolerFaceSDK-iOS\\Sources\\ReskoolerFaceSDK\\Sessions\\KioskWatchdog.swift": {
+    "dependencies": "F:\\My Apps\\ReskoolerFaceSDK-iOS\\.build\\index-build\\x86_64-unknown-windows-msvc\\debug\\ReskoolerFaceSDK.build\\KioskWatchdog.d",
+    "object": "F:\\My Apps\\ReskoolerFaceSDK-iOS\\.build\\index-build\\x86_64-unknown-windows-msvc\\debug\\ReskoolerFaceSDK.build\\KioskWatchdog.swift.o",
+    "swiftmodule": "F:\\My Apps\\ReskoolerFaceSDK-iOS\\.build\\index-build\\x86_64-unknown-windows-msvc\\debug\\ReskoolerFaceSDK.build\\KioskWatchdog~partial.swiftmodule",
+    "swift-dependencies": "F:\\My Apps\\ReskoolerFaceSDK-iOS\\.build\\index-build\\x86_64-unknown-windows-msvc\\debug\\ReskoolerFaceSDK.build\\KioskWatchdog.swiftdeps",
+    "diagnostics": "F:\\My Apps\\ReskoolerFaceSDK-iOS\\.build\\index-build\\x86_64-unknown-windows-msvc\\debug\\ReskoolerFaceSDK.build\\KioskWatchdog.dia"  },
+  "F:\\My Apps\\ReskoolerFaceSDK-iOS\\Sources\\ReskoolerFaceSDK\\Sessions\\SelfAttendanceSession.swift": {
+    "dependencies": "F:\\My Apps\\ReskoolerFaceSDK-iOS\\.build\\index-build\\x86_64-unknown-windows-msvc\\debug\\ReskoolerFaceSDK.build\\SelfAttendanceSession.d",
+    "object": "F:\\My Apps\\ReskoolerFaceSDK-iOS\\.build\\index-build\\x86_64-unknown-windows-msvc\\debug\\ReskoolerFaceSDK.build\\SelfAttendanceSession.swift.o",
+    "swiftmodule": "F:\\My Apps\\ReskoolerFaceSDK-iOS\\.build\\index-build\\x86_64-unknown-windows-msvc\\debug\\ReskoolerFaceSDK.build\\SelfAttendanceSession~partial.swiftmodule",
+    "swift-dependencies": "F:\\My Apps\\ReskoolerFaceSDK-iOS\\.build\\index-build\\x86_64-unknown-windows-msvc\\debug\\ReskoolerFaceSDK.build\\SelfAttendanceSession.swiftdeps",
+    "diagnostics": "F:\\My Apps\\ReskoolerFaceSDK-iOS\\.build\\index-build\\x86_64-unknown-windows-msvc\\debug\\ReskoolerFaceSDK.build\\SelfAttendanceSession.dia"  },
+  "F:\\My Apps\\ReskoolerFaceSDK-iOS\\Sources\\ReskoolerFaceSDK\\Tracking\\TrackSession.swift": {
+    "dependencies": "F:\\My Apps\\ReskoolerFaceSDK-iOS\\.build\\index-build\\x86_64-unknown-windows-msvc\\debug\\ReskoolerFaceSDK.build\\TrackSession.d",
+    "object": "F:\\My Apps\\ReskoolerFaceSDK-iOS\\.build\\index-build\\x86_64-unknown-windows-msvc\\debug\\ReskoolerFaceSDK.build\\TrackSession.swift.o",
+    "swiftmodule": "F:\\My Apps\\ReskoolerFaceSDK-iOS\\.build\\index-build\\x86_64-unknown-windows-msvc\\debug\\ReskoolerFaceSDK.build\\TrackSession~partial.swiftmodule",
+    "swift-dependencies": "F:\\My Apps\\ReskoolerFaceSDK-iOS\\.build\\index-build\\x86_64-unknown-windows-msvc\\debug\\ReskoolerFaceSDK.build\\TrackSession.swiftdeps",
+    "diagnostics": "F:\\My Apps\\ReskoolerFaceSDK-iOS\\.build\\index-build\\x86_64-unknown-windows-msvc\\debug\\ReskoolerFaceSDK.build\\TrackSession.dia"  },
+  "F:\\My Apps\\ReskoolerFaceSDK-iOS\\Sources\\ReskoolerFaceSDK\\Utilities\\ImageProcessor.swift": {
+    "dependencies": "F:\\My Apps\\ReskoolerFaceSDK-iOS\\.build\\index-build\\x86_64-unknown-windows-msvc\\debug\\ReskoolerFaceSDK.build\\ImageProcessor.d",
+    "object": "F:\\My Apps\\ReskoolerFaceSDK-iOS\\.build\\index-build\\x86_64-unknown-windows-msvc\\debug\\ReskoolerFaceSDK.build\\ImageProcessor.swift.o",
+    "swiftmodule": "F:\\My Apps\\ReskoolerFaceSDK-iOS\\.build\\index-build\\x86_64-unknown-windows-msvc\\debug\\ReskoolerFaceSDK.build\\ImageProcessor~partial.swiftmodule",
+    "swift-dependencies": "F:\\My Apps\\ReskoolerFaceSDK-iOS\\.build\\index-build\\x86_64-unknown-windows-msvc\\debug\\ReskoolerFaceSDK.build\\ImageProcessor.swiftdeps",
+    "diagnostics": "F:\\My Apps\\ReskoolerFaceSDK-iOS\\.build\\index-build\\x86_64-unknown-windows-msvc\\debug\\ReskoolerFaceSDK.build\\ImageProcessor.dia"  },
+  "F:\\My Apps\\ReskoolerFaceSDK-iOS\\Sources\\ReskoolerFaceSDK\\Utilities\\VideoToolboxHeader.swift": {
+    "dependencies": "F:\\My Apps\\ReskoolerFaceSDK-iOS\\.build\\index-build\\x86_64-unknown-windows-msvc\\debug\\ReskoolerFaceSDK.build\\VideoToolboxHeader.d",
+    "object": "F:\\My Apps\\ReskoolerFaceSDK-iOS\\.build\\index-build\\x86_64-unknown-windows-msvc\\debug\\ReskoolerFaceSDK.build\\VideoToolboxHeader.swift.o",
+    "swiftmodule": "F:\\My Apps\\ReskoolerFaceSDK-iOS\\.build\\index-build\\x86_64-unknown-windows-msvc\\debug\\ReskoolerFaceSDK.build\\VideoToolboxHeader~partial.swiftmodule",
+    "swift-dependencies": "F:\\My Apps\\ReskoolerFaceSDK-iOS\\.build\\index-build\\x86_64-unknown-windows-msvc\\debug\\ReskoolerFaceSDK.build\\VideoToolboxHeader.swiftdeps",
+    "diagnostics": "F:\\My Apps\\ReskoolerFaceSDK-iOS\\.build\\index-build\\x86_64-unknown-windows-msvc\\debug\\ReskoolerFaceSDK.build\\VideoToolboxHeader.dia"  },
+  "F:\\My Apps\\ReskoolerFaceSDK-iOS\\.build\\index-build\\x86_64-unknown-windows-msvc\\debug\\ReskoolerFaceSDK.build\\DerivedSources\\resource_bundle_accessor.swift": {
+    "dependencies": "F:\\My Apps\\ReskoolerFaceSDK-iOS\\.build\\index-build\\x86_64-unknown-windows-msvc\\debug\\ReskoolerFaceSDK.build\\resource_bundle_accessor.d",
+    "object": "F:\\My Apps\\ReskoolerFaceSDK-iOS\\.build\\index-build\\x86_64-unknown-windows-msvc\\debug\\ReskoolerFaceSDK.build\\resource_bundle_accessor.swift.o",
+    "swiftmodule": "F:\\My Apps\\ReskoolerFaceSDK-iOS\\.build\\index-build\\x86_64-unknown-windows-msvc\\debug\\ReskoolerFaceSDK.build\\resource_bundle_accessor~partial.swiftmodule",
+    "swift-dependencies": "F:\\My Apps\\ReskoolerFaceSDK-iOS\\.build\\index-build\\x86_64-unknown-windows-msvc\\debug\\ReskoolerFaceSDK.build\\resource_bundle_accessor.swiftdeps",
+    "diagnostics": "F:\\My Apps\\ReskoolerFaceSDK-iOS\\.build\\index-build\\x86_64-unknown-windows-msvc\\debug\\ReskoolerFaceSDK.build\\resource_bundle_accessor.dia"  }
+}

@@ -1,0 +1,23 @@
+{
+  "": {
+    "swift-dependencies": "F:\\My Apps\\ReskoolerFaceSDK-iOS\\.build\\index-build\\x86_64-unknown-windows-msvc\\debug\\ReskoolerFaceSDKTests.build\\primary.swiftdeps"
+  },
+  "F:\\My Apps\\ReskoolerFaceSDK-iOS\\Tests\\ReskoolerFaceSDKTests\\FaceQualityGateTests.swift": {
+    "dependencies": "F:\\My Apps\\ReskoolerFaceSDK-iOS\\.build\\index-build\\x86_64-unknown-windows-msvc\\debug\\ReskoolerFaceSDKTests.build\\FaceQualityGateTests.d",
+    "object": "F:\\My Apps\\ReskoolerFaceSDK-iOS\\.build\\index-build\\x86_64-unknown-windows-msvc\\debug\\ReskoolerFaceSDKTests.build\\FaceQualityGateTests.swift.o",
+    "swiftmodule": "F:\\My Apps\\ReskoolerFaceSDK-iOS\\.build\\index-build\\x86_64-unknown-windows-msvc\\debug\\ReskoolerFaceSDKTests.build\\FaceQualityGateTests~partial.swiftmodule",
+    "swift-dependencies": "F:\\My Apps\\ReskoolerFaceSDK-iOS\\.build\\index-build\\x86_64-unknown-windows-msvc\\debug\\ReskoolerFaceSDKTests.build\\FaceQualityGateTests.swiftdeps",
+    "diagnostics": "F:\\My Apps\\ReskoolerFaceSDK-iOS\\.build\\index-build\\x86_64-unknown-windows-msvc\\debug\\ReskoolerFaceSDKTests.build\\FaceQualityGateTests.dia"  },
+  "F:\\My Apps\\ReskoolerFaceSDK-iOS\\Tests\\ReskoolerFaceSDKTests\\FaceRecognizerTests.swift": {
+    "dependencies": "F:\\My Apps\\ReskoolerFaceSDK-iOS\\.build\\index-build\\x86_64-unknown-windows-msvc\\debug\\ReskoolerFaceSDKTests.build\\FaceRecognizerTests.d",
+    "object": "F:\\My Apps\\ReskoolerFaceSDK-iOS\\.build\\index-build\\x86_64-unknown-windows-msvc\\debug\\ReskoolerFaceSDKTests.build\\FaceRecognizerTests.swift.o",
+    "swiftmodule": "F:\\My Apps\\ReskoolerFaceSDK-iOS\\.build\\index-build\\x86_64-unknown-windows-msvc\\debug\\ReskoolerFaceSDKTests.build\\FaceRecognizerTests~partial.swiftmodule",
+    "swift-dependencies": "F:\\My Apps\\ReskoolerFaceSDK-iOS\\.build\\index-build\\x86_64-unknown-windows-msvc\\debug\\ReskoolerFaceSDKTests.build\\FaceRecognizerTests.swiftdeps",
+    "diagnostics": "F:\\My Apps\\ReskoolerFaceSDK-iOS\\.build\\index-build\\x86_64-unknown-windows-msvc\\debug\\ReskoolerFaceSDKTests.build\\FaceRecognizerTests.dia"  },
+  "F:\\My Apps\\ReskoolerFaceSDK-iOS\\Tests\\ReskoolerFaceSDKTests\\FaceSimilarityTests.swift": {
+    "dependencies": "F:\\My Apps\\ReskoolerFaceSDK-iOS\\.build\\index-build\\x86_64-unknown-windows-msvc\\debug\\ReskoolerFaceSDKTests.build\\FaceSimilarityTests.d",
+    "object": "F:\\My Apps\\ReskoolerFaceSDK-iOS\\.build\\index-build\\x86_64-unknown-windows-msvc\\debug\\ReskoolerFaceSDKTests.build\\FaceSimilarityTests.swift.o",
+    "swiftmodule": "F:\\My Apps\\ReskoolerFaceSDK-iOS\\.build\\index-build\\x86_64-unknown-windows-msvc\\debug\\ReskoolerFaceSDKTests.build\\FaceSimilarityTests~partial.swiftmodule",
+    "swift-dependencies": "F:\\My Apps\\ReskoolerFaceSDK-iOS\\.build\\index-build\\x86_64-unknown-windows-msvc\\debug\\ReskoolerFaceSDKTests.build\\FaceSimilarityTests.swiftdeps",
+    "diagnostics": "F:\\My Apps\\ReskoolerFaceSDK-iOS\\.build\\index-build\\x86_64-unknown-windows-msvc\\debug\\ReskoolerFaceSDKTests.build\\FaceSimilarityTests.dia"  }
+}

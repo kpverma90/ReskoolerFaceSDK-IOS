@@ -1,0 +1,43 @@
+name: Reskooler iOS SDK Build
+
+on:
+  push:
+    branches:
+      - feature/ios-native-sdk
+  pull_request:
+    branches:
+      - main
+  workflow_dispatch:
+
+jobs:
+  ios-cocoapods-build:
+    name: Validate CocoaPods iOS SDK
+    runs-on: macos-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Setup Xcode
+        uses: maxim-lobanov/setup-xcode@v1
+        with:
+          xcode-version: latest-stable
+
+      - name: Show Build Environment
+        run: |
+          swift --version
+          xcodebuild -version
+          xcrun --sdk iphonesimulator --show-sdk-version
+          ruby --version
+
+      - name: Install CocoaPods
+        run: |
+          sudo gem install cocoapods --no-document
+          pod --version
+
+      - name: Validate and Build iOS Pod
+        run: |
+          pod lib lint ReskoolerFaceSDK.podspec \
+            --platforms=ios \
+            --allow-warnings \
+            --verbose

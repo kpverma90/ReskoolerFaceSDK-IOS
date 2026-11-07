@@ -1,0 +1,11 @@
+{
+  "": {
+    "swift-dependencies": "F:\\My Apps\\ReskoolerFaceSDK-iOS\\.build\\index-build\\x86_64-unknown-windows-msvc\\debug\\ReskoolerFaceSDKPackageTests.build\\primary.swiftdeps"
+  },
+  "F:\\My Apps\\ReskoolerFaceSDK-iOS\\.build\\index-build\\x86_64-unknown-windows-msvc\\debug\\ReskoolerFaceSDKPackageTests.derived\\runner.swift": {
+    "dependencies": "F:\\My Apps\\ReskoolerFaceSDK-iOS\\.build\\index-build\\x86_64-unknown-windows-msvc\\debug\\ReskoolerFaceSDKPackageTests.build\\runner.d",
+    "object": "F:\\My Apps\\ReskoolerFaceSDK-iOS\\.build\\index-build\\x86_64-unknown-windows-msvc\\debug\\ReskoolerFaceSDKPackageTests.build\\runner.swift.o",
+    "swiftmodule": "F:\\My Apps\\ReskoolerFaceSDK-iOS\\.build\\index-build\\x86_64-unknown-windows-msvc\\debug\\ReskoolerFaceSDKPackageTests.build\\runner~partial.swiftmodule",
+    "swift-dependencies": "F:\\My Apps\\ReskoolerFaceSDK-iOS\\.build\\index-build\\x86_64-unknown-windows-msvc\\debug\\ReskoolerFaceSDKPackageTests.build\\runner.swiftdeps",
+    "diagnostics": "F:\\My Apps\\ReskoolerFaceSDK-iOS\\.build\\index-build\\x86_64-unknown-windows-msvc\\debug\\ReskoolerFaceSDKPackageTests.build\\runner.dia"  }
+}
