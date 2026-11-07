@@ -28,6 +28,7 @@ public class FaceSDK {
 
     private var kiosk: KioskSession?
     private var attendance: SelfAttendanceSession?
+    private var enrollment: EnrollmentSession?
 
     private let watchdog = KioskWatchdog()
 
@@ -119,58 +120,97 @@ public class FaceSDK {
         }
     }
 
-    // MARK: - Start SDK
+    // MARK: - Start Kiosk / Attendance
 
     public func start(mode: FaceSdkMode) {
 
         guard !isReleased else {
-
-            emit(
-                FaceSdkResult(
-                    type: .error,
-                    message: "Face SDK has been released"
-                )
-            )
-
+            emitError("Face SDK has been released")
             return
         }
-
-        self.mode = mode
 
         switch mode {
 
         case .kiosk:
+            self.mode = .kiosk
 
             kiosk = KioskSession(
                 recognizer: recognizer
             )
 
             attendance = nil
+            enrollment = nil
 
         case .selfAttendance:
+            self.mode = .selfAttendance
 
             attendance = SelfAttendanceSession(
                 recognizer: recognizer
             )
 
             kiosk = nil
+            enrollment = nil
 
         case .enrollment:
-
-            kiosk = nil
-            attendance = nil
-
-            emit(
-                FaceSdkResult(
-                    type: .error,
-                    message: "Enrollment capture is not implemented in this SDK version"
-                )
+            emitError(
+                "Use startEnrollment(staffId:) to start enrollment"
             )
-
             return
         }
 
         cameraManager.startCamera()
+    }
+
+    // MARK: - Start Enrollment
+
+    public func startEnrollment(staffId: String) {
+
+        guard !isReleased else {
+            emitError("Face SDK has been released")
+            return
+        }
+
+        guard !staffId.trimmingCharacters(
+            in: .whitespacesAndNewlines
+        ).isEmpty else {
+            emitError("Invalid staff ID")
+            return
+        }
+
+        mode = .enrollment
+
+        kiosk = nil
+        attendance = nil
+
+        enrollment = EnrollmentSession(
+            staffId: staffId,
+            gallery: gallery
+        )
+
+        emit(
+            FaceSdkResult(
+                type: .success,
+                pose: .straight,
+                message: "Look straight"
+            )
+        )
+
+        cameraManager.startCamera()
+    }
+
+    // MARK: - Cancel Enrollment
+
+    public func cancelEnrollment() {
+
+        enrollment?.cancel()
+        enrollment = nil
+
+        emit(
+            FaceSdkResult(
+                type: .success,
+                message: "Enrollment cancelled"
+            )
+        )
     }
 
     // MARK: - Stop SDK
@@ -178,6 +218,9 @@ public class FaceSDK {
     public func stop() {
 
         cameraManager.stopCamera()
+
+        enrollment?.cancel()
+        enrollment = nil
 
         isProcessingFrame = false
     }
@@ -198,15 +241,12 @@ public class FaceSDK {
 
     private func processFrame(_ sampleBuffer: CMSampleBuffer) {
 
-        guard !isReleased else {
-            return
-        }
+        guard !isReleased else { return }
+        guard !isProcessingFrame else { return }
 
-        guard !isProcessingFrame else {
-            return
-        }
-
-        guard let pixelBuffer = CMSampleBufferGetImageBuffer(sampleBuffer) else {
+        guard let pixelBuffer = CMSampleBufferGetImageBuffer(
+            sampleBuffer
+        ) else {
             return
         }
 
@@ -223,14 +263,12 @@ public class FaceSDK {
 
         faceDetectorEngine.process(
             image: visionImage,
+
             onSuccess: { [weak self] faces in
 
-                guard let self else {
-                    return
-                }
+                guard let self else { return }
 
                 guard !self.isReleased else {
-
                     self.finishProcessing(success: false)
                     return
                 }
@@ -242,19 +280,12 @@ public class FaceSDK {
                     frameHeight: frameHeight
                 )
             },
+
             onFailure: { [weak self] error in
 
-                guard let self else {
-                    return
-                }
+                guard let self else { return }
 
-                self.emit(
-                    FaceSdkResult(
-                        type: .error,
-                        message: error.localizedDescription
-                    )
-                )
-
+                self.emitError(error.localizedDescription)
                 self.finishProcessing(success: false)
             }
         )
@@ -269,13 +300,25 @@ public class FaceSDK {
         frameHeight: Int
     ) {
 
-        // No face detected
+        // No face
 
         if faces.isEmpty {
 
-            if mode == .selfAttendance {
+            if mode == .enrollment {
 
-                _ = attendance?.processFrame(
+                handleEnrollmentFrame(
+                    EnrollmentFrame(
+                        faceCount: 0,
+                        quality: nil,
+                        yaw: 0,
+                        isLive: false,
+                        embedding: nil
+                    )
+                )
+
+            } else if mode == .selfAttendance {
+
+                if let result = attendance?.processFrame(
                     frame: AttendanceFrame(
                         faceCount: 0,
                         quality: nil,
@@ -283,35 +326,51 @@ public class FaceSDK {
                         liveScore: 0,
                         embedding: nil
                     )
-                )
-            }
+                ) {
+                    emit(result)
+                }
 
-            emit(
-                FaceSdkResult(
-                    type: .noFace
-                )
-            )
+                emit(FaceSdkResult(type: .noFace))
+
+            } else {
+
+                emit(FaceSdkResult(type: .noFace))
+            }
 
             finishProcessing(success: true)
             return
         }
 
-        // Multiple faces detected
+        // Multiple faces
 
         if faces.count > 1 {
 
-            emit(
-                FaceSdkResult(
-                    type: .multipleFaces
+            if mode == .enrollment {
+
+                handleEnrollmentFrame(
+                    EnrollmentFrame(
+                        faceCount: faces.count,
+                        quality: nil,
+                        yaw: 0,
+                        isLive: false,
+                        embedding: nil
+                    )
                 )
-            )
+
+            } else {
+
+                emit(
+                    FaceSdkResult(
+                        type: .multipleFaces
+                    )
+                )
+            }
 
             finishProcessing(success: true)
             return
         }
 
         guard let face = faces.first else {
-
             finishProcessing(success: false)
             return
         }
@@ -331,7 +390,7 @@ public class FaceSDK {
             activeKeys: [trackId]
         )
 
-        // Face quality metrics
+        let yaw = Float(face.headEulerAngleY)
 
         let metrics = FaceMetrics(
             left: Float(face.frame.minX),
@@ -340,7 +399,7 @@ public class FaceSDK {
             bottom: Float(face.frame.maxY),
             frameWidth: frameWidth,
             frameHeight: frameHeight,
-            yaw: Float(face.headEulerAngleY),
+            yaw: yaw,
             pitch: Float(face.headEulerAngleX),
             roll: Float(face.headEulerAngleZ)
         )
@@ -349,16 +408,11 @@ public class FaceSDK {
             m: metrics
         )
 
-        // Heavy processing
-
         processingQueue.async { [weak self] in
 
-            guard let self else {
-                return
-            }
+            guard let self else { return }
 
             guard !self.isReleased else {
-
                 self.finishProcessing(success: false)
                 return
             }
@@ -367,7 +421,8 @@ public class FaceSDK {
                 face: face,
                 pixelBuffer: pixelBuffer,
                 quality: quality,
-                trackId: trackId
+                trackId: trackId,
+                yaw: yaw
             )
         }
     }
@@ -378,7 +433,8 @@ public class FaceSDK {
         face: Face,
         pixelBuffer: CVPixelBuffer,
         quality: QualityResult,
-        trackId: Int
+        trackId: Int,
+        yaw: Float
     ) {
 
         var isLive = false
@@ -389,7 +445,7 @@ public class FaceSDK {
 
             if case .ok = quality {
 
-                // Liveness processing
+                // Liveness
 
                 if let cropped = ImageProcessor.cropAndResize(
                     pixelBuffer: pixelBuffer,
@@ -406,25 +462,36 @@ public class FaceSDK {
                     isLive = liveScore >= 0.85
                 }
 
-                // Face embedding
+                // Embedding
 
                 if isLive {
 
-                    if let embeddingCrop = ImageProcessor.cropAndResize(
-                        pixelBuffer: pixelBuffer,
-                        faceRect: face.frame,
-                        targetSize: 112
-                    ) {
+                    let canCaptureEnrollmentPose: Bool
 
-                        embedding = try embeddingEngine?
-                            .getEmbedding(
-                                pixelBuffer: embeddingCrop
-                            )
+                    if mode == .enrollment {
+                        canCaptureEnrollmentPose =
+                            enrollment?.poseMatches(yaw: yaw) ?? false
+                    } else {
+                        canCaptureEnrollmentPose = true
+                    }
+
+                    if canCaptureEnrollmentPose {
+
+                        if let embeddingCrop =
+                            ImageProcessor.cropAndResize(
+                                pixelBuffer: pixelBuffer,
+                                faceRect: face.frame,
+                                targetSize: 112
+                            ) {
+
+                            embedding = try embeddingEngine?
+                                .getEmbedding(
+                                    pixelBuffer: embeddingCrop
+                                )
+                        }
                     }
                 }
             }
-
-            // Kiosk Mode
 
             switch mode {
 
@@ -449,10 +516,13 @@ public class FaceSDK {
 
             case .enrollment:
 
-                emit(
-                    FaceSdkResult(
-                        type: .error,
-                        message: "Enrollment capture is not implemented"
+                handleEnrollmentFrame(
+                    EnrollmentFrame(
+                        faceCount: 1,
+                        quality: quality,
+                        yaw: yaw,
+                        isLive: isLive,
+                        embedding: embedding
                     )
                 )
             }
@@ -461,14 +531,113 @@ public class FaceSDK {
 
         } catch {
 
+            emitError(error.localizedDescription)
+            finishProcessing(success: false)
+        }
+    }
+
+    // MARK: - Enrollment Processing
+
+    private func handleEnrollmentFrame(
+        _ frame: EnrollmentFrame
+    ) {
+
+        guard let session = enrollment,
+              session.isActive() else {
+            return
+        }
+
+        let update = session.onFrame(frame)
+
+        handleEnrollmentUpdate(update)
+    }
+
+    // MARK: - Enrollment Updates
+
+    private func handleEnrollmentUpdate(
+        _ update: EnrollmentUpdate
+    ) {
+
+        switch update {
+
+        case .inactive:
+            break
+
+        case .guidance(let pose, let reason, let message):
+
+            let resultType: FaceSdkResultType
+
+            switch reason {
+
+            case .noFace:
+                resultType = .noFace
+
+            case .multipleFaces:
+                resultType = .multipleFaces
+
+            case .lowQuality:
+                resultType = .lowQuality
+
+            case .invalidEmbedding:
+                resultType = .error
+
+            case .wrongPose,
+                 .checkingLiveness,
+                 .holdStill,
+                 .inconsistentFace:
+                resultType = .scanning
+            }
+
             emit(
                 FaceSdkResult(
-                    type: .error,
-                    message: error.localizedDescription
+                    type: resultType,
+                    pose: pose,
+                    message: message
                 )
             )
 
-            finishProcessing(success: false)
+        case .captured(_, let next, let message):
+
+            emit(
+                FaceSdkResult(
+                    type: .success,
+                    pose: next,
+                    message: message
+                )
+            )
+
+        case .completed(let result):
+
+            // Save all three embeddings in gallery
+
+            gallery.put(
+                staffId: result.staffId,
+                embeddings: result.embeddings
+            )
+
+            emit(
+                FaceSdkResult(
+                    type: .success,
+                    staffId: result.staffId,
+                    enrollmentEmbeddings: result.embeddings,
+                    pose: .right,
+                    message: "Enrollment completed"
+                )
+            )
+
+            enrollment = nil
+            kiosk?.clearTracks()
+
+        case .failed(_, let message):
+
+            emit(
+                FaceSdkResult(
+                    type: .error,
+                    message: message
+                )
+            )
+
+            enrollment = nil
         }
     }
 
@@ -543,7 +712,6 @@ public class FaceSDK {
         if let result = attendance?.processFrame(
             frame: frame
         ) {
-
             emit(result)
         }
     }
@@ -554,9 +722,7 @@ public class FaceSDK {
         embeddings: [String: [[Float]]]
     ) {
 
-        guard !isReleased else {
-            return
-        }
+        guard !isReleased else { return }
 
         gallery.replaceAll(
             staff: embeddings
@@ -568,9 +734,7 @@ public class FaceSDK {
         embeddings: [[Float]]
     ) {
 
-        guard !isReleased else {
-            return
-        }
+        guard !isReleased else { return }
 
         gallery.put(
             staffId: staffId,
@@ -582,9 +746,7 @@ public class FaceSDK {
         staffId: String
     ) {
 
-        guard !isReleased else {
-            return
-        }
+        guard !isReleased else { return }
 
         gallery.remove(
             staffId: staffId
@@ -593,16 +755,13 @@ public class FaceSDK {
 
     public func clearGallery() {
 
-        guard !isReleased else {
-            return
-        }
+        guard !isReleased else { return }
 
         gallery.clear()
     }
 
     public func getGallery() -> [String: [[Float]]] {
-
-        return gallery.entries()
+        gallery.entries()
     }
 
     public var staffCount: Int {
@@ -620,19 +779,26 @@ public class FaceSDK {
         isProcessingFrame = false
     }
 
+    // MARK: - Error
+
+    private func emitError(_ message: String) {
+
+        emit(
+            FaceSdkResult(
+                type: .error,
+                message: message
+            )
+        )
+    }
+
     // MARK: - Emit Result
 
     private func emit(_ result: FaceSdkResult) {
 
         DispatchQueue.main.async { [weak self] in
 
-            guard let self else {
-                return
-            }
-
-            guard !self.isReleased else {
-                return
-            }
+            guard let self else { return }
+            guard !self.isReleased else { return }
 
             self.onResult?(result)
         }
@@ -642,9 +808,7 @@ public class FaceSDK {
 
     public func close() {
 
-        guard !isReleased else {
-            return
-        }
+        guard !isReleased else { return }
 
         isReleased = true
 
@@ -659,6 +823,7 @@ public class FaceSDK {
 
         kiosk = nil
         attendance = nil
+        enrollment = nil
     }
 
     deinit {
