@@ -128,6 +128,10 @@ public class AntiSpoofEngine {
         tracks[trackId]?.clear()
     }
 
+    public func resetAll() {
+        tracks.removeAll()
+    }
+
     public func retainOnly(activeKeys: Set<Int>) {
         tracks = tracks.filter { activeKeys.contains($0.key) }
     }
